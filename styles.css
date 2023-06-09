@@ -55,7 +55,7 @@ a {
 
 .content {
     width: 450px;
-    margin-top: 30px;
+    padding-top: 30px;
     height: calc(100% - 30px);
     overflow: auto;
     -ms-overflow-style: none;
@@ -134,8 +134,6 @@ a {
     }
 
     .content {
-        margin-top: 0;
-        padding-top: 30px;
         margin-left: 0;
         padding-left: calc(max(20px, 4vw));
         width: calc(min(450px, 90%));
