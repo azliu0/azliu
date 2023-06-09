@@ -101,25 +101,36 @@ a {
     .nav {
         width: 100%;
         height: calc(max(20%, 100px));
-        flex-direction: row-reverse;
-        align-items: end;
     }
     
     .nav-title {
-        margin-bottom: 20px;
+        margin-top: 60px;
         margin-right: 5vw;
         text-align: right;
         width: 100%;
+        font-size: calc(min(35px, 7vw));
     }
     
     .nav-links {
         display: flex;
+        margin-top: 0;
         margin-bottom: 20px;
-        margin-left: 5vw;
-        margin-right: 0;
+        margin-right: 5vw;
+        justify-content: end;
+        font-size: calc(min(18px, 4vw));
     }
 
     .nav-link {
-        padding: 6px;
+        margin-top: 0;
+        padding-left: calc(min(12px, 3vw));
+    }
+
+    .content {
+        width: calc(min(450px, 93%));
+        font-size: calc(min(18px, 4vw));
+    }
+
+    .grey {
+        font-size: calc(min(15px, 4vw));
     }
   }
