@@ -57,6 +57,9 @@ a {
     width: 450px;
     padding-top: 30px;
     height: calc(100% - 30px);
+    padding-left: 4vw;
+    font-size: 18px;
+
     overflow: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -64,9 +67,6 @@ a {
     &::-webkit-scrollbar {
         display: none;
     }
-    /* margin-left: calc(4vw + max(20%, 250px)); */
-    margin-left: 4vw;
-    font-size: 18px;
 }
 
 .whitespace {
@@ -134,7 +134,6 @@ a {
     }
 
     .content {
-        margin-left: 0;
         padding-left: calc(max(20px, 4vw));
         width: calc(min(450px, 90%));
         font-size: calc(min(18px, 4vw));
