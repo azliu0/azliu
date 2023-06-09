@@ -2,7 +2,6 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: 'Lato', sans-serif;
-    overflow-y: hidden;
 }
 
 a {
@@ -23,7 +22,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: end;
-    width: calc(max(20%, 225px));
+    width: calc(max(20%, 250px));
     height: 100%;
     /* background-color: #F1F1F1; */
     background-color: #F4F4F4;
@@ -46,7 +45,7 @@ a {
 }
 
 .nav-link {
-    margin-top: 10px;
+    margin-top: 8px;
     color: #5A5A5A;
     &:hover {
         cursor: pointer;
@@ -55,11 +54,23 @@ a {
 }
 
 .content {
-    height: 100%;
     width: 450px;
     margin-top: 30px;
+    height: calc(100% - 30px);
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    /* margin-left: calc(4vw + max(20%, 250px)); */
     margin-left: 4vw;
     font-size: 18px;
+}
+
+.whitespace {
+    height: 30px;
 }
 
 .ref {
@@ -90,20 +101,18 @@ a {
 }
 
 @media screen and (max-width: 800px) {
-    html, body {
-        overflow-y: scroll;
-    }
-
     .flex {
         flex-direction: column;
     }
+    
     .nav {
         width: 100%;
-        height: calc(max(20%, 100px));
+        height: 180px;
+        position: static;
+        justify-content: end;
     }
     
     .nav-title {
-        margin-top: 60px;
         margin-right: 5vw;
         text-align: right;
         width: 100%;
@@ -125,7 +134,11 @@ a {
     }
 
     .content {
-        width: calc(min(450px, 93%));
+        margin-top: 0;
+        padding-top: 30px;
+        margin-left: 0;
+        padding-left: calc(max(20px, 4vw));
+        width: calc(min(450px, 90%));
         font-size: calc(min(18px, 4vw));
     }
 
