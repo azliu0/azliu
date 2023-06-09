@@ -1,0 +1,125 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    overflow-y: hidden;
+    /* font-family: Arial, Helvetica, sans-serif */
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    height: 100%;
+}
+
+.wrapper {
+    height: 100%;
+}
+  
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: calc(max(20%, 225px));
+    height: 100%;
+    /* background-color: #F1F1F1; */
+    background-color: #F4F4F4;
+}
+
+.nav-title {
+    margin-top: 80px;
+    margin-right: 15%;
+    font-size: 35px;
+    font-weight: 700;
+    /* border: 2px solid red; */
+}
+
+.nav-links {
+    margin-top: 30px;
+    margin-right: 15%;
+    width: calc(max(50%, 150px));
+    text-align: right;
+    font-size: 18px;
+}
+
+.nav-link {
+    margin-top: 10px;
+    color: #5A5A5A;
+    &:hover {
+        cursor: pointer;
+        color: black;
+    }
+}
+
+.content {
+    height: 100%;
+    width: 450px;
+    margin-top: 30px;
+    margin-left: 4vw;
+    font-size: 18px;
+}
+
+.ref {
+    color: purple;
+    &:hover {
+        cursor: pointer;
+        color: pink;
+    }
+}
+
+.ref2 {
+    color: #404040;
+    text-decoration: underline;
+    &:hover {
+        cursor: pointer;
+        color: black;
+    }
+}
+
+.links {
+    color: #404040;
+}
+
+.grey {
+    font-family: 'Nanum Gothic';
+    font-size: 15px;
+    color: #808080;
+}
+
+@media screen and (max-width: 800px) {
+    html, body {
+        overflow-y: scroll;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+    .nav {
+        width: 100%;
+        height: calc(max(20%, 100px));
+        flex-direction: row-reverse;
+        align-items: end;
+    }
+    
+    .nav-title {
+        margin-bottom: 20px;
+        margin-right: 5vw;
+        text-align: right;
+        width: 100%;
+    }
+    
+    .nav-links {
+        display: flex;
+        margin-bottom: 20px;
+        margin-left: 5vw;
+        margin-right: 0;
+    }
+
+    .nav-link {
+        padding: 6px;
+    }
+  }
