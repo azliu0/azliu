@@ -100,6 +100,11 @@ a {
     color: #808080;
 }
 
+.subtext {
+    font-size: 18px;
+    color: #808080;
+}
+
 @media screen and (max-width: 800px) {
     .flex {
         flex-direction: column;
