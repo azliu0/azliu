@@ -50,6 +50,14 @@ body, body * {
   }
 }
 
+.refg {
+  color: rgb(173, 216, 230);
+  &:hover {
+      cursor: pointer;
+      background-color: rgba(173, 216, 230, 0.3)
+  }
+}
+
 .flex-responsive {
   display: flex;
 }
