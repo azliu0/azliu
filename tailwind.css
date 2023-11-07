@@ -570,6 +570,10 @@ video {
   margin-top: 7.5rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .block {
   display: block;
 }
@@ -608,6 +612,18 @@ video {
 
 .list-disc {
   list-style-type: disc;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-normal {
+  justify-content: normal;
 }
 
 .justify-end {
@@ -716,9 +732,51 @@ body, body * {
 }
 
 .ref {
-  color: lightblue;
+  color: lightgreen;
   &:hover {
     cursor: pointer;
-    color: pink;
+    background-color: rgba(144, 238, 144, 0.3)
+  }
+}
+
+.flex-responsive {
+  display: flex;
+}
+
+@media (max-width: 500px) {
+  .flex-responsive {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 600px) {
+  .max-\[600px\]\:flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 550px) {
+  .max-\[550px\]\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
+  .max-\[550px\]\:flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .max-\[550px\]\:justify-normal {
+    justify-content: normal;
+  }
+}
+
+@media (max-width: 500px) {
+  .max-\[500px\]\:flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 350px) {
+  .max-\[350px\]\:flex-col-reverse {
+    flex-direction: column-reverse;
   }
 }

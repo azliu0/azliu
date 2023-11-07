@@ -43,9 +43,19 @@ body, body * {
 }
 
 .ref {
-  color: lightblue;
+  color: lightgreen;
   &:hover {
       cursor: pointer;
-      color: pink;
+      background-color: rgba(144, 238, 144, 0.3)
+  }
+}
+
+.flex-responsive {
+  display: flex;
+}
+
+@media (max-width: 500px) {
+  .flex-responsive {
+    flex-direction: column-reverse;
   }
 }
