@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <title>azliu</title>
+    <meta name="description" content="Hello! I'm Andrew, an second-year undergraduate studying Computer Science (course 6) and Mathematics (course 18) at MIT.">
+    <meta name="google-site-verification" content="MHmLxqD3u4RjqBRetoPfxvJwM_eGMQnkwRXSSbUi0DY" />
+    <!-- custom styles -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="tailwind.css">
+    <title>Andrew Liu</title>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XN7F4CTMD0"></script>
@@ -19,49 +20,76 @@ gtag('js', new Date());
 
 gtag('config', 'G-XN7F4CTMD0');
 </script>
+
 <body>
-    <div class="flex">
-        <div class="nav">
-            <div class="nav-title"><a href="./">Andrew Liu</a></div>
-            <div class="nav-links">
-                <div class="nav-link"><a href="./">Home</a></div>
-                <div class="nav-link"><a href="./coursework.html">Coursework</a></div>
-                <!-- <div class="nav-link"><a href="./projects.html">Projects</a></div> -->
-            </div>
-        </div>
+    <div class="flex justify-center">
         <div class="content">
-            <h2>Coursework <span class="subtext">(*=ongoing)</span></h2>
+            <div class="mt-[7.5rem] mb-10 flex justify-between border-solid">
+                <div>
+                    <div class="text-2xl">Coursework <span class="text-sm">(*=ongoing)</span></div>
+                </div>
+                <div>
+                    <div class="text-lg flex justify-end">
+                        <a class="headbtn" href="./index.html">home</a>
+                        <a class="headbtn selected" href="./coursework.html">coursework</a>
+                        <a class="headbtn" href="./logs.html">logs</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[80%]">
+                <p>I like to take notes in LaTeX. I use my own style package to format my documents, which can be found <a href="https://github.com/azliu0/_andrew.sty" target="_blank" class="ref">here</a>. </p>
+                
+                <br /> 
 
-            <p>I like to take notes in LaTeX. I use my own style package to format my documents, which can be found <a href="https://github.com/azliu0/_andrew.sty" target="_blank" class="ref">here</a>. </p>
+				<p>The source code for my notes can be found <a href="https://azliu0.github.io/mit-notes/" target="_blank" class="ref">here</a>. The full repository can be found <a href="https://github.com/azliu0/mit-notes" target="_blank" class="ref">here</a>. Source code deployment is automated, so the pdfs on this page are the most updated versions of my notes.</p>
+                
+                <br />
 
-						<p>The source code for my notes can be found <a href="https://azliu0.github.io/mit-notes/" target="_blank" class="ref">here</a>. The full repository can be found <a href="https://github.com/azliu0/mit-notes" target="_blank" class="ref">here</a>. Source code deployment is automated, so the pdfs on this page are the most updated versions of my notes.</p>
+                <p>Finally, in case you are curious, I take my notes in <a href="https://neovim.io/" target="_blank" class="ref">Neovim</a> with <a href="https://github.com/lervag/vimtex" target="_blank" class="ref">VimTex</a> and <a href="https://pwmt.org/projects/zathura/" target="_blank" class="ref">zathura</a>. More details about my setup and workflow can be found <a href="https://github.com/azliu0/dotfiles/tree/main/latex" target="_blank" class="ref">here</a>.</p>
+                
+                <br />
 
-            <p>Finally, in case you are curious, I take my notes in <a href="https://neovim.io/" target="_blank" class="ref">Neovim</a> with <a href="https://github.com/lervag/vimtex" target="_blank" class="ref">VimTex</a> and <a href="https://pwmt.org/projects/zathura/" target="_blank" class="ref">zathura</a>. More details about my setup and workflow can be found <a href="https://github.com/azliu0/dotfiles/tree/main/latex" target="_blank" class="ref">here</a>.</p>
+                <h3>Computer Science</h3>
+                <ul class="list-disc ml-6">
+                    <li>Machine Learning* (6.790) (<a class="ref" href="https://azliu0.github.io/mit-notes/6.7900/6_7900_Notes.pdf" target="_blank">notes</a>)</li>
+                    <li>Performance Engineering* (6.106)</li>
+                    <li>Advanced NLP* (6.861)</li>
+                    <li>Operating Systems* (6.181)</li>
+                    <li>Computation Structures (6.191)</li>
+                    <li>Machine Learning (6.390)</li>
+                    <li>Design and Analysis of Algorithms (6.122) (<a class="ref" href="https://azliu0.github.io/mit-notes/6.1220/6_1220_Notes.pdf" target="_blank">notes</a>)</li>
+                    <li>C and Assembly (6.190)</li>
+                    <li>Python Programming (6.101)</li>
+                    <li>web.lab (6.962) (<a class="ref" href="https://github.com/azliu0/mazed" target="_blank">final project</a>)</li>
+                </ul>
+                
+                <br />
+                <h3>Mathematics</h3>
+                <ul class="list-disc ml-6">
+                    <li>Abstract Algebra (18.701) (<a class="ref" href="https://azliu0.github.io/mit-notes/18.701/18_701_Notes.pdf" target="_blank">notes</a>)</li>
+                    <li>Stochastic Processes* (18.615) (<a class="ref" href="https://azliu0.github.io/mit-notes/18.615/18_615_Notes.pdf" target="_blank">notes</a>)</li>
+                    <li>Probability (6.S095) (<a class="ref" href="https://azliu0.github.io/mit-notes/6.S095/6_S095_Notes.pdf" target="_blank">notes</a>)</li>
+                    <li>Statistics (18.650) (<a class="ref" href="https://azliu0.github.io/mit-notes/18.650/18_650_Notes.pdf" target="_blank">notes</a>)</li>
+                </ul>
 
-            <h3>Computer Science</h3>
-            <ul>
-                <li>Machine Learning* (6.790) (<a class="ref" href="https://azliu0.github.io/mit-notes/6.7900/6_7900_Notes.pdf" target="_blank">notes</a>)</li>
-                <li>Performance Engineering* (6.106)</li>
-                <li>Advanced NLP* (6.861)</li>
-                <li>Operating Systems* (6.181)</li>
-                <li>Computation Structures (6.191)</li>
-                <li>Machine Learning (6.390)</li>
-                <li>Design and Analysis of Algorithms (6.122) (<a class="ref" href="https://azliu0.github.io/mit-notes/6.1220/6_1220_Notes.pdf" target="_blank">notes</a>)</li>
-                <li>C and Assembly (6.190)</li>
-                <li>Python Programming (6.101)</li>
-                <li>web.lab (6.962) (<a class="ref" href="https://github.com/azliu0/mazed" target="_blank">final project</a>)</li>
-            </ul>
-
-            <h3>Mathematics</h3>
-            <ul>
-                <li>Abstract Algebra (18.701) (<a class="ref" href="https://azliu0.github.io/mit-notes/18.701/18_701_Notes.pdf" target="_blank">notes</a>)</li>
-                <li>Stochastic Processes* (18.615) (<a class="ref" href="https://azliu0.github.io/mit-notes/18.615/18_615_Notes.pdf" target="_blank">notes</a>)</li>
-                <li>Probability (6.S095) (<a class="ref" href="https://azliu0.github.io/mit-notes/6.S095/6_S095_Notes.pdf" target="_blank">notes</a>)</li>
-                <li>Statistics (18.650) (<a class="ref" href="https://azliu0.github.io/mit-notes/18.650/18_650_Notes.pdf" target="_blank">notes</a>)</li>
-            </ul>
-
-            <div class="whitespace"></div>
+                <div class="mb-[7.5rem]"></div>
+            </div>
         </div>
     </div>
 </body>
+
+<script>
+    function select(btn) {
+        var btns = document.getElementsByClassName("headbtn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].classList.remove("selected");
+        }
+        btn.classList.add("selected");
+    }    
+    Array.from(document.getElementsByClassName("headbtn")).forEach(function(btn) {
+        btn.addEventListener("click", function() {
+            select(this);
+        });
+    })
+</script>
 </html>
