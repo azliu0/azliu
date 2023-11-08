@@ -1,12 +1,15 @@
-<script>
+<script lang="ts">
   import "../app.css";
 
   import { fly } from "svelte/transition";
 
   import Header from "$lib/components/Header.svelte";
+  import Seo from "$lib/components/Seo.svelte";
 
   export let data;
 </script>
+
+<Seo />
 
 <svelte:head>
   <!-- Google tag (gtag.js) - Google Analytics -->

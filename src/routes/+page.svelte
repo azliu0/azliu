@@ -3,7 +3,7 @@
     <div class="w-[80%]">
       <p>
         Hello! I'm Andrew, a second-year undergraduate studying Computer Science
-        (course 6) and Mathematics (course 18) at MIT. 
+        (course 6) and Mathematics (course 18) at MIT.
       </p>
 
       <br />
@@ -51,7 +51,7 @@
           > dev team
         </li>
         <li>
-          enjoying my <a href="./coursework.html" class="refg">classes</a>
+          enjoying my <a href="/coursework" class="refg">classes</a>
         </li>
       </ul>
 
