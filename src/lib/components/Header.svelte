@@ -25,7 +25,7 @@
     >
       <div>
         {#if pageTitle === "home"}
-          <div class="text-2xl">Andrew Liu</div>
+          <div class="text-2xl"><a href="/">Andrew Liu</a></div>
           <div class="text-lg">azliu [at] mit [dot] edu</div>
         {:else if pageTitle === "coursework"}
           <div class="text-2xl">
@@ -34,7 +34,8 @@
         {:else if pageTitle === "logs"}
           <div class="text-2xl">Logs</div>
         {:else}
-          <a class="headbtn" href="/">home</a>
+          <div class="text-2xl"><a href="/">Andrew Liu</a></div>
+          <div class="text-lg">azliu [at] mit [dot] edu</div>
         {/if}
       </div>
       <div>
