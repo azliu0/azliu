@@ -5,22 +5,8 @@
 
   import Header from "$lib/components/Header.svelte";
   import Seo from "$lib/components/Seo.svelte";
-  import { page } from "$app/stores";
-  import { goto } from "$app/navigation";
-  import { onMount } from "svelte";
 
   export let data;
-  let validRoutes: (string | null)[] = ["/", "/coursework", "/logs"];
-
-  onMount(() => {
-    // check that route exists
-    let path: string | null = $page.data?.pathname;
-    if (!validRoutes.includes(path)) {
-      if (path === "/coursework.html") return goto("/coursework");
-      else if (path === "/logs.html") return goto("/logs");
-      else return goto("/");
-    }
-  });
 </script>
 
 <Seo />
