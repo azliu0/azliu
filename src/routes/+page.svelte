@@ -2,15 +2,15 @@
   <div class="content">
     <div class="w-[80%]">
       <p>
-        Hello! I'm Andrew, a second-year undergraduate studying Computer Science
-        (course 6) and Mathematics (course 18) at MIT.
+        Hello! I'm Andrew, an undergraduate studying Computer Science (course 6)
+        and Mathematics (course 18) at MIT.
       </p>
 
       <br />
 
       <p>
-        I'm broadly interested in math, machine learning, and software. Outside
-        of school, I also enjoy poker.
+        I'm broadly interested in machine learning and software. Outside of
+        school, I also enjoy poker.
       </p>
 
       <br />
@@ -57,21 +57,22 @@
 
       <br />
 
-      In the near future, I'll be
+      In the near future,
       <ul class="list-disc ml-6">
         <li>
-          working on QR at <a
+          <!-- working on QR at <a
             href="https://www.citadelsecurities.com/"
             target="_blank"
             class="refg">citadel securities</a
-          >
+          > -->
+          I hope to learn more about scalable software systems
         </li>
       </ul>
     </div>
 
     <br />
     <div class="flex">
-      <a class="pr-2" href="https://github.com/azliu0" target="_blank">
+      <a class="pr-1" href="https://github.com/azliu0" target="_blank">
         <img src="/images/logos/github.svg" width="25px" alt="githublogo" />
       </a>
       <a href="https://www.linkedin.com/in/az-liu/" target="_blank">
