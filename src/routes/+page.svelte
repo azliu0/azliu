@@ -57,15 +57,10 @@
 
       <br />
 
-      In the near future,
+      Up next:
       <ul class="list-disc ml-6">
         <li>
-          <!-- working on QR at <a
-            href="https://www.citadelsecurities.com/"
-            target="_blank"
-            class="refg">citadel securities</a
-          >
-          I hope to learn more about scalable software systems
+          investigating scalable software systems
         </li>
       </ul> -->
     </div>
