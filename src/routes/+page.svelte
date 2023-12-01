@@ -8,7 +8,7 @@
 
       <br />
 
-      <p>
+      <!-- <p>
         I'm broadly interested in machine learning and software. Outside of
         school, I also enjoy poker.
       </p>
@@ -64,10 +64,10 @@
             href="https://www.citadelsecurities.com/"
             target="_blank"
             class="refg">citadel securities</a
-          > -->
+          >
           I hope to learn more about scalable software systems
         </li>
-      </ul>
+      </ul> -->
     </div>
 
     <br />
