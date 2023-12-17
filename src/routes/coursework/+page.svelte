@@ -1,6 +1,6 @@
 <div class="flex justify-center">
   <div class="content">
-    <div class="w-[80%]">
+    <div class="w-[85%]">
       <p>
         This is a list of some the classes that I've taken or are currently
         taking. I like to take notes in LaTeX. I use my own style package to
@@ -60,28 +60,32 @@
       <h3>Computer Science</h3>
       <ul class="list-disc ml-6">
         <li>
-          Machine Learning* (6.790) (<a
+          6.790 [6.867]: Machine Learning (<a
             class="ref"
             href="https://azliu0.github.io/mit-notes/6.7900/6_7900_Notes.pdf"
             target="_blank">notes</a
+          >) (<a
+            class="ref"
+            href="/assets/pdf/6_790_final_paper.pdf"
+            target="_blank">project</a
           >)
         </li>
-        <li>Performance Engineering* (6.106)</li>
-        <li>Advanced NLP* (6.861)</li>
-        <li>Operating Systems* (6.181)</li>
-        <li>Computation Structures (6.191)</li>
+        <li>6.106 [6.172]: Software Performance Engineering</li>
+        <li>6.861 [6.806]: Advanced NLP</li>
+        <li>6.191 [6.004]: Computation Structures</li>
         <li>
-          Design and Analysis of Algorithms (6.122) (<a
+          6.122 [6.046]: Design and Analysis of Algorithms (<a
             class="ref"
             href="https://azliu0.github.io/mit-notes/6.1220/6_1220_Notes.pdf"
             target="_blank">notes</a
           >)
         </li>
+        <li>6.181 [6.039]: Operating Systems</li>
         <li>
-          web.lab (6.962) (<a
+          6.962: web.lab (<a
             class="ref"
             href="https://github.com/azliu0/mazed"
-            target="_blank">final project</a
+            target="_blank">project</a
           >)
         </li>
       </ul>
@@ -90,28 +94,28 @@
       <h3>Mathematics</h3>
       <ul class="list-disc ml-6">
         <li>
-          Abstract Algebra (18.701) (<a
+          18.701: Abstract Algebra (<a
             class="ref"
             href="https://azliu0.github.io/mit-notes/18.701/18_701_Notes.pdf"
             target="_blank">notes</a
           >)
         </li>
         <li>
-          Stochastic Processes* (18.615) (<a
+          18.615: Stochastic Processes (<a
             class="ref"
             href="https://azliu0.github.io/mit-notes/18.615/18_615_Notes.pdf"
             target="_blank">notes</a
           >)
         </li>
         <li>
-          Probability (6.S095) (<a
+          6.S095: Probability (<a
             class="ref"
             href="https://azliu0.github.io/mit-notes/6.S095/6_S095_Notes.pdf"
             target="_blank">notes</a
           >)
         </li>
         <li>
-          Statistics (18.650) (<a
+          18.650: Statistics (<a
             class="ref"
             href="https://azliu0.github.io/mit-notes/18.650/18_650_Notes.pdf"
             target="_blank">notes</a
