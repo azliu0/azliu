@@ -1,6 +1,6 @@
 <div class="flex justify-center">
   <div class="content">
-    <div class="w-[80%]">
+    <div class="w-[85%]">
       <p>
         Hello! I'm Andrew, an undergraduate studying Computer Science (course 6)
         and Mathematics (course 18) at MIT.
