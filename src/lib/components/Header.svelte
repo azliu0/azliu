@@ -9,12 +9,18 @@
 
   let pageTitle: string | null = null;
   $: {
-    const link = pages.find(({ href }) => href === $page.url.pathname);
+    const link = pages.find(
+      ({ href }) =>
+        href === $page.url.pathname ||
+        (href.length > 1 && $page.url.pathname.startsWith(href))
+    );
     if (link) {
       pageTitle = link.name;
     } else {
       pageTitle = null;
     }
+    console.log(pageTitle);
+    console.log($page.url.pathname);
   }
 </script>
 

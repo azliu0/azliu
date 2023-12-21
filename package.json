@@ -1,4 +1,4 @@
-{ 
+{
 	"name": "azliu",
 	"version": "0.0.1",
 	"private": true,
@@ -23,6 +23,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/adapter-static": "^2.0.3"
+		"@sveltejs/adapter-static": "^2.0.3",
+		"mdsvex": "^0.11.0"
 	}
 }
