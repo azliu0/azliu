@@ -9,7 +9,7 @@ const getDate = (date: string) : Date => {
 const getPosts = async () => {
   let posts : Array<Post> = [];
 
-  const paths = import.meta.glob('/src/routes/rawlogs/*.md', { eager: true });
+  const paths = import.meta.glob('/src/logs/*.md', { eager: true });
 
   for (const path in paths) {
     const file = paths[path];
