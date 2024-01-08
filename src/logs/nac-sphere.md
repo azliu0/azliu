@@ -1,6 +1,6 @@
 ---
 title: Finding Friends
-subtitle: spherical trig on the nac
+subtitle: spherical trig
 date: '2024-01-07'
 published: true
 ---
