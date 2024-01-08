@@ -22,11 +22,9 @@
   }
 </script>
 
-<header class="flex justify-center">
+<header class="header-wrapper">
   <div class="content">
-    <div
-      class="mt-[7.5rem] mb-10 flex justify-between max-[550px]:flex-col-reverse"
-    >
+    <div class="header">
       <div>
         {#if pageTitle === "home"}
           <div class="text-2xl"><a href="/">Andrew Liu</a></div>
@@ -43,7 +41,7 @@
         {/if}
       </div>
       <div>
-        <div class="text-lg flex justify-end max-[550px]:mb-5">
+        <div class="text-lg page-title">
           {#each pages as page (page)}
             {#if page.name === pageTitle}
               <a class="headbtn selected" href={page.href}>{page.name}</a>

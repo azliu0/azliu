@@ -7,9 +7,6 @@
     class="ref">here</a
   >.
 </p>
-
-<br />
-
 <p>
   My setup is <a href="https://neovim.io/" target="_blank" class="ref">Neovim</a
   >
@@ -27,9 +24,6 @@
     class="ref">here</a
   >.
 </p>
-
-<br />
-
 <p>
   The source code for all of my notes can be found <a
     href="https://azliu0.github.io/mit-notes/"
@@ -45,11 +39,8 @@
   > to automatically deploy whenever I update my notes, so the pdfs on this page
   will always be the latest versions.
 </p>
-
-<br />
-
-<h3>Computer Science</h3>
-<ul class="list-disc ml-6">
+<div>Computer Science</div>
+<ul>
   <li>
     6.790 [6.867]: Machine Learning (<a
       class="ref"
@@ -78,10 +69,8 @@
     >)
   </li>
 </ul>
-
-<br />
-<h3>Mathematics</h3>
-<ul class="list-disc ml-6">
+<div>Mathematics</div>
+<ul>
   <li>
     18.701: Abstract Algebra (<a
       class="ref"

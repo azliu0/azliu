@@ -19,5 +19,5 @@
   </div>
 </div>
 
-<!-- <hr />
-<a href={`../../../${data.slug}.md`} class="markdown">markdown</a> -->
+<hr />
+<a href={`/rawlogs/${data.slug}.md`} class="markdown">markdown</a>
