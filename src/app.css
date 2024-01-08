@@ -100,3 +100,47 @@ body, body * {
   font-size: 14px;
   color: rgb(255,255,255,0.8);
 }
+
+.post-page-title {
+  font-size: 0;
+  margin-bottom: 0.2rem;
+}
+
+.post-page-title span {
+  font-size: 24px;
+}
+
+.post-page-title-container {
+  margin-bottom: 1rem;
+}
+
+.post-page-date {
+  font-size: 14px;
+  color: gray;
+  font-style: italic;
+  word-spacing: -0.1rem;
+}
+
+.markdown {
+  color: rgb(255,255,255,0.8);
+  font-size: 12px;
+}
+
+.markdown:hover {
+  cursor: pointer;
+  background-color: rgb(173, 255, 47, 0.8);
+}
+
+hr {
+  border-color: rgb(255,255,255,0.7);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.span-first-letter {
+  color:rgb(173, 255, 47);
+}
+
+.post-page-content-container {
+  font-size: 14px;
+}
