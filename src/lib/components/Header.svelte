@@ -19,8 +19,6 @@
     } else {
       pageTitle = null;
     }
-    console.log(pageTitle);
-    console.log($page.url.pathname);
   }
 </script>
 
@@ -35,10 +33,10 @@
           <div class="text-lg">azliu [at] mit [dot] edu</div>
         {:else if pageTitle === "coursework"}
           <div class="text-2xl">
-            Coursework <span class="text-sm">(*=ongoing)</span>
+            <a href="/coursework">Coursework</a>
           </div>
         {:else if pageTitle === "logs"}
-          <div class="text-2xl">Logs</div>
+          <div class="text-2xl"><a href="/logs">Logs</a></div>
         {:else}
           <div class="text-2xl"><a href="/">Andrew Liu</a></div>
           <div class="text-lg">azliu [at] mit [dot] edu</div>

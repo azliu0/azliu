@@ -71,3 +71,32 @@ body, body * {
     flex-direction: column-reverse;
   }
 }
+
+.post {
+  margin-bottom: 2rem;
+}
+
+.post-date {
+  font-size: 14px;
+  color: gray;
+}
+
+.post-title {
+  font-size: 18px;
+}
+
+.post-title a:hover {
+  cursor: pointer;
+  background-color: rgb(173, 255, 47, 0.8);
+}
+
+.post-pound {
+  font-size: 18px;
+  color: rgb(173, 255, 47);
+}
+
+.post-subtitle {
+  margin-top: 0.2rem;
+  font-size: 14px;
+  color: rgb(255,255,255,0.8);
+}
