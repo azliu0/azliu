@@ -1,6 +1,4 @@
-export type categories = 'sveltekit' | 'svelte'
-
-export type Post = {
+export type Log = {
   title: string
   subtitle: string
   time: string

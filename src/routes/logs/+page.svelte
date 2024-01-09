@@ -2,13 +2,13 @@
   export let data;
 </script>
 
-{#each data.posts as post}
+{#each data.logs as log}
   <div class="post">
-    <span class="post-date">{post.date}</span>
+    <span class="post-date">{log.date}</span>
     <span class="post-pound">#</span>
     <span class="post-title">
-      <a href={`logs/${post.slug}`}>{post.title}</a>
+      <a href={`logs/${log.slug}`}>{log.title}</a>
     </span>
-    <div class="post-subtitle">{post.subtitle}</div>
+    <div class="post-subtitle">{log.subtitle}</div>
   </div>
 {/each}

@@ -13,6 +13,16 @@ const config = {
 
   kit: {
     adapter: adapter(),
+    // Add this part to your existing config
+    prerender: {
+      // Define the handleHttpError function
+      handleHttpError: ({ status, path, referrer, referenceType }) => {
+        console.error(
+          `Error when prerendering ${path}: ${status} (referred by ${referrer}, ${referenceType})`
+        );
+        // Implement custom logic here based on the error
+      },
+    },
   },
 };
 
