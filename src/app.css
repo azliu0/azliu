@@ -206,8 +206,8 @@ hr {
   display: flex;
 }
 
-.pr-1 {
-  padding-right: 0.25rem;
+.icon {
+  margin-right: 0.25rem;
 }
 
 a {
