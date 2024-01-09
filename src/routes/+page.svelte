@@ -15,5 +15,3 @@
     />
   </a>
 </div>
-
-<div class="mb-[7.5rem]" />

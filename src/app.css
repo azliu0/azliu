@@ -1,4 +1,8 @@
-body, body * {
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
   background-color: black;
   font-family: 'Menlo', sans-serif;
   color: white;
@@ -165,6 +169,15 @@ hr {
 
 .post-page-content-container {
   font-size: 14px;
+  width: 110%;
+}
+
+.post-page-content-container a {
+  color: rgb(173, 255, 47);
+}
+
+.post-page-content-container a:hover {
+  background-color: rgb(173, 255, 47, 0.2);
 }
 
 .text-2xl {
@@ -196,9 +209,14 @@ hr {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 ul {
   margin-top: 0;
   margin-left: -1rem;
+}
+
+.bot-div {
+  margin-bottom: 2rem;
 }

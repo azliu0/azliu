@@ -19,5 +19,10 @@
   </div>
 </div>
 
-<!-- <hr />
-<a href={`/rawlogs/${data.slug}.md`} class="markdown">markdown</a> -->
+<hr />
+<div>
+  <a href={`/md/${data.slug}.md`} class="markdown">Read Markdown</a>
+</div>
+<div>
+  <a href={`/md/${data.slug}.md`} class="markdown">Scroll to Top</a>
+</div>

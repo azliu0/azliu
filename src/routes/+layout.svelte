@@ -13,6 +13,7 @@
 
 <svelte:head>
   <!-- Google tag (gtag.js) - Google Analytics -->
+  <!-- Google tag (gtag.js) - Google Analytics -->
   <script
     async
     src="https://www.googletagmanager.com/gtag/js?id=G-XN7F4CTMD0"
@@ -42,5 +43,6 @@
         </div>
       </div>
     </div>
+    <div class="bot-div"></div>
   </main>
 {/key}
