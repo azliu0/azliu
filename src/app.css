@@ -206,6 +206,10 @@ hr {
   display: flex;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .icon {
   margin-right: 0.25rem;
 }
