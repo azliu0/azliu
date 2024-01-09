@@ -16,6 +16,9 @@ body {
 
 .content {
   width: 700px;
+  margin-left: 0 2rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .inner-content {
@@ -169,7 +172,6 @@ hr {
 
 .post-page-content-container {
   font-size: 14px;
-  width: 110%;
 }
 
 .post-page-content-container a {
@@ -219,4 +221,8 @@ ul {
 
 .bot-div {
   margin-bottom: 2rem;
+}
+
+.footer {
+  margin-bottom: -0.5rem;
 }

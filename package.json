@@ -30,7 +30,9 @@
   },
   "type": "module",
   "dependencies": {
+    "@sveltejs/adapter-static": "^3.0.1",
     "@sveltejs/vite-plugin-svelte": "^3.0.1",
-    "@sveltejs/adapter-static": "^4.0.4"
+    "rehype-raw": "^7.0.0",
+    "remark-gfm": "^4.0.0"
   }
 }

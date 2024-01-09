@@ -12,9 +12,7 @@ published: true
 
 </span>
 
-# Summary of math
-
-Coming into this project, we wanted to have a solid understanding of the math underlying the model. We reproduce some of the things we learned here. Since we had some background knowledge, we'll only rigorously rederive results that we learned or found very interesting.
+This is an overview of the math of a recent project that I have been working on. In the near future, I'll post some more details about this project. For now, here is a dump of math...
 
 ## 1. DDPM
 
