@@ -3,9 +3,9 @@ html {
 }
 
 body {
-  background-color: black;
+  background-color: white;
   font-family: 'Menlo', sans-serif;
-  color: white;
+  color: black;
   line-height: 1.5rem;
 }
 
@@ -62,19 +62,25 @@ body {
   text-align: center;
   border-radius: 2px;
   font-size: 16px;
+  color: gray;
 }
 
 .headbtn:hover {
   cursor: pointer;
-  background-color: rgb(45, 45, 45);
+  color: black;
+  /* background-color: rgb(45, 45, 45); */
+  /* background-color: gray; */
 }
 
 .selected {
-  background-color: rgb(45, 45, 45);
+  /* background-color: rgb(45, 45, 45); */
+  /* background-color: gray; */
+  color: black;
 }
 
 .ref {
-  color: rgb(255, 160, 122);
+  /* color: rgb(255, 160, 122); */
+  color: rgb(255, 120, 67);
 }
 
 .ref:hover {
@@ -116,18 +122,22 @@ body {
 
 .post-title a:hover {
   cursor: pointer;
-  background-color: rgb(173, 255, 47, 0.8);
+  /* background-color: rgb(173, 255, 47, 0.8); */
+  /* background-color: rgb(162, 252, 27); */
+  color: gray;
 }
 
 .post-pound {
   font-size: 18px;
-  color: rgb(173, 255, 47);
+  /* color: rgb(173, 255, 47); */
+  color: rgb(8, 175, 253);
 }
 
 .post-subtitle {
   margin-top: 0.2rem;
   font-size: 14px;
-  color: rgb(255,255,255,0.8);
+  /* color: rgb(255,255,255,0.8); */
+  color: rgb(71, 71, 71);
 }
 
 .post-page-title {
@@ -151,13 +161,14 @@ body {
 }
 
 .markdown {
-  color: rgb(255,255,255,0.8);
+  /* color: rgb(255,255,255,0.8); */
   font-size: 12px;
 }
 
 .markdown:hover {
   cursor: pointer;
-  background-color: rgb(173, 255, 47, 0.8);
+  /* background-color: rgb(173, 255, 47, 0.8); */
+  color: gray;
 }
 
 hr {
@@ -167,7 +178,8 @@ hr {
 }
 
 .span-first-letter {
-  color:rgb(173, 255, 47);
+  /* color:rgb(173, 255, 47); */
+  color: rgb(8, 175, 253);
 }
 
 .post-page-content-container {
@@ -176,12 +188,14 @@ hr {
 }
 
 .post-page-content-container a {
-  color: rgb(173, 255, 47);
+  /* color: rgb(155, 253, 8); */
+  color: rgb(8, 175, 253);
 }
 
 .post-page-content-container a:hover {
   cursor: pointer;
-  background-color: rgb(173, 255, 47, 0.2);
+  /* background-color: rgb(173, 255, 47, 0.2); */
+  background-color: rgb(8, 175, 253, 0.1);
 }
 
 .text-2xl {
@@ -217,7 +231,7 @@ hr {
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 ul {
