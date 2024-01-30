@@ -19,7 +19,7 @@
   </div>
 </div>
 
-<hr />
+<br />
 <div class="footer">
   <a href={`/md/${data.slug}.md`} class="markdown hover:text-brightred"
     >Read Markdown</a
