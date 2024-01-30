@@ -8,7 +8,7 @@
   Mathematics (course 18) at MIT.
 </p>
 <br />
-<div class="flex gap-1">
+<div class="flex gap-[6px]">
   <a href="mailto:azliu@mit.edu" target="_blank">
     <Button src="/assets/images/logos/mail.svg" alt="mail" />
   </a>

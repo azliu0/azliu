@@ -27,13 +27,15 @@
     <div class="header">
       <div>
         {#if pageTitle === "coursework"}
-          <div class="text-2xl">
+          <div class="text-3xl">
             <a href="/coursework">Coursework</a>
           </div>
         {:else if pageTitle === "logs"}
-          <div class="text-2xl"><a href="/logs">Logs</a></div>
+          <div class="text-3xl"><a href="/logs">Logs</a></div>
         {:else}
-          <div class="text-4xl"><a href="/">Andrew Liu.</a></div>
+          <div class="text-4xl">
+            <a href="/">Andrew Liu<span class="text-gray-700">.</span></a>
+          </div>
         {/if}
       </div>
       <div>
