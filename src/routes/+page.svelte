@@ -1,6 +1,24 @@
 <!-- import buton component -->
 <script lang="ts">
   import Button from "$lib/components/Button.svelte";
+  import type { Link } from "$lib/types";
+  const links: Array<Link> = [
+    {
+      href: "mailto:azliu@mit.edu",
+      src: "/assets/images/logos/mail.svg",
+      alt: "mail",
+    },
+    {
+      href: "https://github.com/azliu0",
+      src: "/assets/images/logos/githublight.svg",
+      alt: "github",
+    },
+    {
+      href: "https://www.linkedin.com/in/az-liu/",
+      src: "/assets/images/logos/linkedinlight.svg",
+      alt: "linkedin",
+    },
+  ];
 </script>
 
 <p>
@@ -9,13 +27,9 @@
 </p>
 <br />
 <div class="flex gap-[6px]">
-  <a href="mailto:azliu@mit.edu" target="_blank">
-    <Button src="/assets/images/logos/mail.svg" alt="mail" />
-  </a>
-  <a href="https://github.com/azliu0" target="_blank">
-    <Button src="/assets/images/logos/githublight.svg" alt="linkedin" />
-  </a>
-  <a href="https://www.linkedin.com/in/az-liu/" target="_blank">
-    <Button src="/assets/images/logos/linkedinlight.svg" alt="linkedin" />
-  </a>
+  {#each links as link}
+    <a href={link.href}>
+      <Button src={link.src} alt={link.alt} />
+    </a>
+  {/each}
 </div>
