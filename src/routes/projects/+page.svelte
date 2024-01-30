@@ -94,7 +94,7 @@
     {
       title: "optimizing ismorphic subgraph counting @ MIT CSAIL",
       desc: "devised and implemented new ways to count subgraph isomorphisms in large network graphs, e.g., triangles in Facebook. specifically focused on optimizing matrix multiplication for small subgraphs (<=K4)",
-      date: "June 2023",
+      date: "Jun 2023",
       link: "",
       links: [],
       techs: ["C/C++", "cilk"],
@@ -114,10 +114,28 @@
           href: "https://arxiv.org/abs/2012.12897",
         },
       ],
-      techs: ["algebra", "graphs"],
+      techs: ["algebra", "graph theory"],
+    },
+    {
+      title: "_andrew.sty",
+      desc: "personal latex style file for note taking and homework",
+      date: "Oct 2022",
+      link: "https://github.com/azliu0/_andrew.sty",
+      links: [
+        {
+          title: "code",
+          href: "https://github.com/azliu0/_andrew.sty",
+        },
+        {
+          title: "demo",
+          href: "https://azliu.cc/coursework",
+        },
+      ],
+      techs: ["latex"],
     },
   ];
 
+  // sort projects by descending date
   projects.sort((a, b) => {
     const dateA = new Date(
       a.date.replace(/(\w+) (\d{4})/, "$1 01, $2")

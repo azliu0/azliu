@@ -12,7 +12,7 @@
   <div class="text-xl font-bold mb-4">
     <span class="text-green-400"># </span>{project.title}
     <span class="text-xs text-slate-700">{project.date}</span>
-    <div class="flex mt-1 gap-2">
+    <div class="flex mt-1 gap-2 flex-wrap">
       {#each project.techs as tech}
         <span
           class="text-xs text-slate-700 border-[1px] rounded-md p-[3px] bg-slate-200"

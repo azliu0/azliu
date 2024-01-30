@@ -28,7 +28,7 @@
 <br />
 <div class="flex gap-[6px]">
   {#each links as link}
-    <a href={link.href}>
+    <a href={link.href} target="_blank">
       <Button src={link.src} alt={link.alt} />
     </a>
   {/each}
