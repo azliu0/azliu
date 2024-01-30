@@ -4,6 +4,7 @@
   const pages = [
     { name: "home", href: "/" },
     { name: "coursework", href: "/coursework" },
+    { name: "projects", href: "/projects" },
     { name: "logs", href: "/logs" },
   ];
 
@@ -26,7 +27,11 @@
   <div class="content">
     <div class="header">
       <div>
-        {#if pageTitle === "coursework"}
+        {#if pageTitle === "projects"}
+          <div class="text-3xl">
+            <a href="/projects">Projects</a>
+          </div>
+        {:else if pageTitle === "coursework"}
           <div class="text-3xl">
             <a href="/coursework">Coursework</a>
           </div>
@@ -34,7 +39,7 @@
           <div class="text-3xl"><a href="/logs">Logs</a></div>
         {:else}
           <div class="text-4xl">
-            <a href="/">Andrew Liu<span class="text-gray-700">.</span></a>
+            <a href="/">Andrew Liu<span class="text-gray-500">.</span></a>
           </div>
         {/if}
       </div>
