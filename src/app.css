@@ -295,41 +295,6 @@ body {
   }
 }
 
-.post {
-  margin-bottom: 2rem;
-}
-
-.post-date {
-  font-size: 14px;
-  color: gray;
-}
-
-.post-title {
-  font-size: 18px;
-}
-
-.post-title a:hover {
-  cursor: pointer;
-  /* background-color: rgb(173, 255, 47, 0.8); */
-  /* background-color: rgb(162, 252, 27); */
-  /* color: gray; */
-  color: rgb(255, 50, 50);
-  transition: all 0.1s ease-in-out;
-}
-
-.post-pound {
-  font-size: 18px;
-  /* color: rgb(173, 255, 47); */
-  color: rgb(255, 50, 50);
-}
-
-.post-subtitle {
-  margin-top: 0.2rem;
-  font-size: 14px;
-  /* color: rgb(255,255,255,0.8); */
-  color: rgb(71, 71, 71);
-}
-
 .post-page-title {
   font-size: 0;
   margin-bottom: 0.2rem;
@@ -395,10 +360,6 @@ hr {
   @media screen and (max-width: 630px) {
     margin-bottom: 1.25rem;
   }
-}
-
-.justify-center {
-  justify-content: center;
 }
 
 .icon {
