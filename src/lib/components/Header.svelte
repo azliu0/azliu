@@ -27,8 +27,8 @@
     <div class="header">
       <div>
         {#if pageTitle === "home"}
-          <div class="text-2xl"><a href="/">Andrew Liu</a></div>
-          <div class="text-lg">azliu [at] mit [dot] edu</div>
+          <div class="text-2xl title"><a href="/">Andrew Liu</a></div>
+          <div class="text-lg title">azliu [at] mit [dot] edu</div>
         {:else if pageTitle === "coursework"}
           <div class="text-2xl">
             <a href="/coursework">Coursework</a>
