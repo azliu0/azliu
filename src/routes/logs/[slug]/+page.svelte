@@ -21,14 +21,16 @@
 
 <hr />
 <div class="footer">
-  <a href={`/md/${data.slug}.md`} class="markdown">Read Markdown</a>
+  <a href={`/md/${data.slug}.md`} class="markdown hover:text-logs-red"
+    >Read Markdown</a
+  >
 </div>
 <div class="footer">
   <!-- svelte-ignore a11y-click-events-have-key-events -->
   <span
     role="button"
     tabindex="0"
-    class="markdown"
+    class="markdown hover:text-logs-red"
     on:click={() => window.scroll({ top: 0, left: 0, behavior: "smooth" })}
   >
     Scroll to Top
