@@ -2,10 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
-    colors: {
-      "logs-red": "#FF3232",
+    extend: {
+      colors: {
+        brightred: "#FF3232",
+      },
     },
-    extend: {},
   },
   plugins: [],
 };

@@ -21,7 +21,7 @@
 
 <hr />
 <div class="footer">
-  <a href={`/md/${data.slug}.md`} class="markdown hover:text-logs-red"
+  <a href={`/md/${data.slug}.md`} class="markdown hover:text-brightred"
     >Read Markdown</a
   >
 </div>
@@ -30,7 +30,7 @@
   <span
     role="button"
     tabindex="0"
-    class="markdown hover:text-logs-red"
+    class="markdown hover:text-brightred"
     on:click={() => window.scroll({ top: 0, left: 0, behavior: "smooth" })}
   >
     Scroll to Top
