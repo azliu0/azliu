@@ -14,7 +14,7 @@
       alt: "github",
     },
     {
-      href: "https://www.linkedin.com/in/az-liu/",
+      href: "https://www.linkedin.com/in/andrew-z-liu",
       src: "/assets/images/logos/linkedinlight.svg",
       alt: "linkedin",
     },
