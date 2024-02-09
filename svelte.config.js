@@ -12,6 +12,10 @@ const config = {
   // Consult https://github.com/sveltejs/svelte-preprocess
   // for more information about pre processors
   preprocess: [vitePreprocess(), mdsvex(mdsvexConfig)],
+  onwarn: (warning, handler) => {
+    if (warning.code === "a11y-missing-content") return;
+    handler(warning);
+  },
 };
 
 export default config;
