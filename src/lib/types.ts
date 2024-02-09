@@ -7,7 +7,7 @@ export type Log = {
   slug: string
 }
 
-export type ProjectLink = {
+type InfoLink = {
   title: string
   href: string
 } 
@@ -17,12 +17,20 @@ export type Project = {
   desc: string
   date: string
   link: string
-  links: Array<ProjectLink>
-  techs: Array<String>
+  links: Array<InfoLink>
+  techs: Array<string>
 }
 
 export type Link = {
   href: string
   src: string
   alt: string
+}
+
+export type Course = {
+  number: string
+  title: string
+  links: Array<InfoLink>
+  current?: boolean
+  grad?: boolean
 }

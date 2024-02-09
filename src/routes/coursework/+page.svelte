@@ -1,104 +1,223 @@
+<script lang="ts">
+  import type { Course } from "$lib/types";
+
+  const course6: Array<Course> = [
+    {
+      number: "6.790 [6.867]",
+      title: "Machine Learning",
+      links: [
+        {
+          title: "notes",
+          href: "https://azliu0.github.io/mit-notes/6.7900/6_7900_Notes.pdf",
+        },
+        {
+          title: "project",
+          href: "/assets/pdf/6_790_final_paper.pdf",
+        },
+      ],
+      grad: true,
+    },
+    {
+      number: "6.861 [6.806]",
+      title: "Advanced NLP",
+      links: [],
+    },
+    {
+      number: "6.780 [6.437]",
+      title: "Inference and Information",
+      links: [],
+      grad: true,
+      current: true,
+    },
+    {
+      number: "6.820 [6.884]",
+      title: "Sensorimotor Learning",
+      links: [],
+      grad: true,
+      current: true,
+    },
+    {
+      number: "6.106 [6.172]",
+      title: "Software Performance Engineering",
+      links: [],
+    },
+    {
+      number: "6.584 [6.824]",
+      title: "Distributed Systems",
+      links: [],
+      grad: true,
+      current: true,
+    },
+    {
+      number: "6.566 [6.858]",
+      title: "Computer Systems Security",
+      links: [],
+      grad: true,
+      current: true,
+    },
+    {
+      number: "6.191 [6.004]",
+      title: "Computation Structures",
+      links: [],
+    },
+    {
+      number: "6.122 [6.046]",
+      title: "Design and Analysis of Algorithms",
+      links: [
+        {
+          title: "notes",
+          href: "https://azliu0.github.io/mit-notes/6.1220/6_1220_Notes.pdf",
+        },
+      ],
+    },
+    {
+      number: "6.181 [6.039]",
+      title: "Operating Systems",
+      links: [],
+    },
+    {
+      number: "6.962 [6.148]",
+      title: "web.lab",
+      links: [
+        {
+          title: "project",
+          href: "https://github.com/azliu0/mazed",
+        },
+      ],
+    },
+  ];
+
+  const course18: Array<Course> = [
+    {
+      number: "18.656",
+      title: "Non-Asymptotic Statistics",
+      links: [],
+      grad: true,
+      current: true,
+    },
+    {
+      number: "18.701",
+      title: "Abstract Algebra",
+      links: [
+        {
+          title: "notes",
+          href: "https://azliu0.github.io/mit-notes/18.701/18_701_Notes.pdf",
+        },
+      ],
+    },
+    {
+      number: "18.615",
+      title: "Stochastic Processes",
+      links: [
+        {
+          title: "notes",
+          href: "https://azliu0.github.io/mit-notes/18.615/18_615_Notes.pdf",
+        },
+      ],
+      grad: true,
+    },
+    {
+      number: "6.S095",
+      title: "Probability",
+      links: [
+        {
+          title: "notes",
+          href: "https://azliu0.github.io/mit-notes/6.S095/6_S095_Notes.pdf",
+        },
+      ],
+    },
+    {
+      number: "18.650",
+      title: "Statistics",
+      links: [
+        {
+          title: "notes",
+          href: "https://azliu0.github.io/mit-notes/18.650/18_650_Notes.pdf",
+        },
+      ],
+    },
+  ];
+</script>
+
 <p>
   This is a list of some the classes that I've taken or are currently taking. I
   like to take notes in LaTeX. I use my own style package to format my
   documents, which can be found <a
     href="https://github.com/azliu0/_andrew.sty"
     target="_blank"
-    class="ref">here</a
+    class="coursework-ref">here</a
   >.
 </p>
 <p>
-  My setup is <a href="https://neovim.io/" target="_blank" class="ref">Neovim</a
+  My setup is <a
+    href="https://neovim.io/"
+    target="_blank"
+    class="coursework-ref">Neovim</a
   >
   with
-  <a href="https://github.com/lervag/vimtex" target="_blank" class="ref"
-    >VimTex</a
+  <a
+    href="https://github.com/lervag/vimtex"
+    target="_blank"
+    class="coursework-ref">VimTex</a
   >
   and
-  <a href="https://pwmt.org/projects/zathura/" target="_blank" class="ref"
-    >zathura</a
+  <a
+    href="https://pwmt.org/projects/zathura/"
+    target="_blank"
+    class="coursework-ref">zathura</a
   >. More details about my workflow can be found
   <a
     href="https://github.com/azliu0/dotfiles/tree/main/latex"
     target="_blank"
-    class="ref">here</a
+    class="coursework-ref">here</a
   >.
 </p>
 <p>
   The source code for all of my notes can be found <a
     href="https://azliu0.github.io/mit-notes/"
     target="_blank"
-    class="ref">here</a
+    class="coursework-ref">here</a
   >
   (full repo
-  <a href="https://github.com/azliu0/mit-notes" target="_blank" class="ref"
-    >here</a
+  <a
+    href="https://github.com/azliu0/mit-notes"
+    target="_blank"
+    class="coursework-ref">here</a
   >). I use a
-  <a href="https://github.com/features/actions" target="_blank" class="ref"
-    >GitHub action</a
+  <a
+    href="https://github.com/features/actions"
+    target="_blank"
+    class="coursework-ref">GitHub action</a
   > to automatically deploy whenever I update my notes, so the pdfs on this page
   will always be the latest versions.
 </p>
+<p>~ = current, * = grad</p>
+
 <div>Computer Science</div>
 <ul>
-  <li>
-    6.790 [6.867]: Machine Learning (<a
-      class="ref"
-      href="https://azliu0.github.io/mit-notes/6.7900/6_7900_Notes.pdf"
-      target="_blank">notes</a
-    >) (<a class="ref" href="/assets/pdf/6_790_final_paper.pdf" target="_blank"
-      >project</a
-    >)
-  </li>
-  <li>6.106 [6.172]: Software Performance Engineering</li>
-  <li>6.861 [6.806]: Advanced NLP</li>
-  <li>6.191 [6.004]: Computation Structures</li>
-  <li>
-    6.122 [6.046]: Design and Analysis of Algorithms (<a
-      class="ref"
-      href="https://azliu0.github.io/mit-notes/6.1220/6_1220_Notes.pdf"
-      target="_blank">notes</a
-    >)
-  </li>
-  <li>6.181 [6.039]: Operating Systems</li>
-  <li>
-    6.962: web.lab (<a
-      class="ref"
-      href="https://github.com/azliu0/mazed"
-      target="_blank">project</a
-    >)
-  </li>
+  {#each course6 as course}
+    <li>
+      {course.current ? "~" : ""}{course.grad ? "*" : ""}{course.number}: {course.title}
+      {#each course.links as link}
+        {" "}(<a href={link.href} target="_blank" class="coursework-ref"
+          >{link.title}</a
+        >)
+      {/each}
+    </li>
+  {/each}
 </ul>
 <div>Mathematics</div>
 <ul>
-  <li>
-    18.701: Abstract Algebra (<a
-      class="ref"
-      href="https://azliu0.github.io/mit-notes/18.701/18_701_Notes.pdf"
-      target="_blank">notes</a
-    >)
-  </li>
-  <li>
-    18.615: Stochastic Processes (<a
-      class="ref"
-      href="https://azliu0.github.io/mit-notes/18.615/18_615_Notes.pdf"
-      target="_blank">notes</a
-    >)
-  </li>
-  <li>
-    6.S095: Probability (<a
-      class="ref"
-      href="https://azliu0.github.io/mit-notes/6.S095/6_S095_Notes.pdf"
-      target="_blank">notes</a
-    >)
-  </li>
-  <li>
-    18.650: Statistics (<a
-      class="ref"
-      href="https://azliu0.github.io/mit-notes/18.650/18_650_Notes.pdf"
-      target="_blank">notes</a
-    >)
-  </li>
+  {#each course18 as course}
+    <li>
+      {course.current ? "~" : ""}{course.grad ? "*" : ""}{course.number}: {course.title}
+      {#each course.links as link}
+        {" "}(<a href={link.href} target="_blank" class="coursework-ref"
+          >{link.title}</a
+        >)
+      {/each}
+    </li>
+  {/each}
 </ul>
 
 <div class="mb-[7.5rem]" />
