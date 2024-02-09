@@ -7,6 +7,9 @@ module.exports = {
         brightred: "#FF3232",
       },
     },
+    screens: {
+      md: "640px",
+    },
   },
   plugins: [],
 };

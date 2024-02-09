@@ -23,9 +23,13 @@
   }
 </script>
 
-<header class="header-wrapper">
-  <div class="content">
-    <div class="header">
+<header class="flex justify-center">
+  <div
+    class="w-[720px] p-0 pr-[10px] pl-[30px] max-md:mt-[-4rem] max-md:mb-[4rem]"
+  >
+    <div
+      class="mt-[7.5rem] mb-[2rem] flex justify-between max-md:flex-col-reverse"
+    >
       <div>
         {#if pageTitle === "projects"}
           <div class="text-3xl">
@@ -44,12 +48,18 @@
         {/if}
       </div>
       <div>
-        <div class="text-lg page-title">
+        <div class="text-lg flex justify-end max-md:mb-6">
           {#each pages as page (page)}
             {#if page.name === pageTitle}
-              <a class="headbtn selected" href={page.href}>{page.name}</a>
+              <a
+                class="my-0 mx-[0.2rem] py-[0.2rem] px-[0.5rem] text-center text-[16px] text-black hover:cursor-pointer"
+                href={page.href}>{page.name}</a
+              >
             {:else}
-              <a class="headbtn" href={page.href}>{page.name}</a>
+              <a
+                class="my-0 mx-[0.2rem] py-[0.2rem] px-[0.5rem] text-center text-[16px] text-gray-500 hover:cursor-pointer hover:text-black"
+                href={page.href}>{page.name}</a
+              >
             {/if}
           {/each}
         </div>

@@ -2,30 +2,28 @@
   export let data;
 </script>
 
-<div class="post-page-container">
-  <div class="post-page-title-container">
-    <div class="post-page-title">
-      {#each data.meta.title.split(" ") as word}
-        <span class="span-first-letter">{word[0]}</span>
-        <span>{word.slice(1)} </span>
-      {/each}
-    </div>
-    <div class="post-page-date">
-      {data.meta.date} · {data.meta.time}
-    </div>
+<div class="mb-4">
+  <div class="text-[0]">
+    {#each data.meta.title.split(" ") as word}
+      <span class="text-2xl text-brightred">{word[0]}</span>
+      <span class="text-2xl">{word.slice(1)} </span>
+    {/each}
   </div>
-  <div class="post-page-content-container">
-    <svelte:component this={data.content} />
+  <div class="text-[14px] italic text-gray-400 [word-spacing:-0.1rem]">
+    {data.meta.date} · {data.meta.time}
   </div>
+</div>
+<div class="post-page-content-container">
+  <svelte:component this={data.content} />
 </div>
 
 <br />
-<div class="footer">
+<div class="mb-[-0.5rem]">
   <a href={`/md/${data.slug}.md`} class="markdown hover:text-brightred"
     >Read Markdown</a
   >
 </div>
-<div class="footer">
+<div class="mb-[-0.5rem]">
   <!-- svelte-ignore a11y-click-events-have-key-events -->
   <span
     role="button"
@@ -36,4 +34,4 @@
     Scroll to Top
   </span>
 </div>
-<div class="bot-div"></div>
+<div class="mb-8"></div>
