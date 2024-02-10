@@ -8,7 +8,7 @@
       links: [
         {
           title: "notes",
-          href: "https://azliu0.github.io/mit-notes/6.7900/6_7900_Notes.pdf",
+          href: "https://azliu0.github.io/mit-notes/6.790/6_790_Notes.pdf",
         },
         {
           title: "project",
@@ -25,7 +25,12 @@
     {
       number: "6.780 [6.437]",
       title: "Inference and Information",
-      links: [],
+      links: [
+        {
+          title: "notes",
+          href: "https://azliu0.github.io/mit-notes/6.780/6_780_Notes.pdf",
+        },
+      ],
       grad: true,
       current: true,
     },
@@ -66,7 +71,7 @@
       links: [
         {
           title: "notes",
-          href: "https://azliu0.github.io/mit-notes/6.1220/6_1220_Notes.pdf",
+          href: "https://azliu0.github.io/mit-notes/6.122/6_122_Notes.pdf",
         },
       ],
     },
@@ -91,7 +96,12 @@
     {
       number: "18.656",
       title: "Non-Asymptotic Statistics",
-      links: [],
+      links: [
+        {
+          title: "notes",
+          href: "https://azliu0.github.io/mit-notes/18.656/18_656_Notes.pdf",
+        },
+      ],
       grad: true,
       current: true,
     },
