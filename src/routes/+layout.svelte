@@ -13,11 +13,6 @@
 
 <svelte:head>
   <!-- Google tag (gtag.js) - Google Analytics -->
-  <!-- Google tag (gtag.js) - Google Analytics -->
-  <!-- Google tag (gtag.js) - Google Analytics -->
-  <!-- Google tag (gtag.js) - Google Analytics -->
-  <!-- Google tag (gtag.js) - Google Analytics -->
-  <!-- Google tag (gtag.js) - Google Analytics -->
   <script
     async
     src="https://www.googletagmanager.com/gtag/js?id=G-XN7F4CTMD0"
@@ -41,10 +36,8 @@
     out:fly={{ y: 5, duration: 200 }}
   >
     <div class="flex justify-center">
-      <div
-        class="w-[720px] p-0 pr-[10px] pl-[30px] overflow-x-scroll overflow-y-hidden max-md:mt-[-4rem]"
-      >
-        <div class="w-[85%]">
+      <div class="w-[720px] p-0 max-md:mt-[-4rem]">
+        <div class="w-full px-6">
           <slot />
         </div>
       </div>

@@ -24,9 +24,7 @@
 </script>
 
 <header class="flex justify-center">
-  <div
-    class="w-[720px] p-0 pr-[10px] pl-[30px] max-md:mt-[-4rem] max-md:mb-[4rem]"
-  >
+  <div class="w-[720px] px-6 max-md:mt-[-4rem] max-md:mb-[4rem]">
     <div
       class="mt-[7.5rem] mb-[2rem] flex justify-between max-md:flex-col-reverse"
     >

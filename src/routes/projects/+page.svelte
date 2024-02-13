@@ -148,8 +148,7 @@
   });
 </script>
 
-<div class="flex flex-col gap-6 mt-4">
-  <div>assorted projects in software / research / etc</div>
+<div class="flex flex-col gap-4 mt-4 ml-[-16px]">
   {#each projects as project}
     <Project {project} />
   {/each}

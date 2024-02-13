@@ -3,15 +3,17 @@
   export let log: Log;
 </script>
 
-<div class="mb-8">
-  <span class="text-xs text-slate-700">{log.date}</span>
-  <span class="text-xl text-brightred">#</span>
-  <span>
-    <a
-      href={`logs/${log.slug}`}
-      class="text-xl hover:text-brightred transition-colors duration-75"
-      >{log.title}</a
-    >
-  </span>
-  <div class="mt-2 text-md text-slate-700">{log.subtitle}</div>
-</div>
+<a
+  href={`logs/${log.slug}`}
+  target="_blank"
+  class="w-full p-4 pl-4 hover:bg-slate-50 transition-all"
+>
+  <div class="flex justify-between">
+    <div class="text-xl">
+      <span class="text-brightred">#</span>
+      {log.title}
+    </div>
+    <div class="text-slate-600 text-sm">{log.date}</div>
+  </div>
+  <div class="mt-[6px] text-sm text-slate-700">{log.subtitle}</div>
+</a>
