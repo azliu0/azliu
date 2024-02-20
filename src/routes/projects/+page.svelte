@@ -4,6 +4,20 @@
 
   const projects: Array<ProjectType> = [
     {
+      title: "zyzx",
+      desc: "natural language terminal shell built in Zig and using fine-tuned Mixtral 8x7b. in crude testing, our custom model outperformed GPT3.5 in natural language to bash translation. built with @tam-albert and @richen for treehacks 2024.",
+      date: "Feb 2024",
+      link: "https://zyzx.azliu.cc",
+      links: [
+        { title: "website", href: "https://zyzx.azliu.cc" },
+        {
+          title: "code",
+          href: "https://github.com/tam-albert/zyzx",
+        },
+      ],
+      techs: ["zig", "pytorch"],
+    },
+    {
       title: "image-to-image-translation",
       desc: "stable diffusion implementation from scratch in PyTorch, including VAE, transformer, and diffusion modules. the website is a web visualizer for the model, which is deployed on a serverless inference server via modelbit",
       date: "Jan 2024",
@@ -19,7 +33,7 @@
     },
     {
       title: "pigeon",
-      desc: "rag-powered end-to-end email client, built to optimize help email workflows. uses redis vector database to embed documents and aws to receive/send emails. built with the hackMIT dev team",
+      desc: "rag-powered end-to-end email client, built to optimize help email workflows. uses redis vector database to embed documents and aws to receive/send emails. built with the HackMIT dev team",
       date: "Jan 2024",
       link: "https://pigeon.hackmit.org",
       links: [
