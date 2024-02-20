@@ -37,7 +37,12 @@
     {
       number: "6.820 [6.884]",
       title: "Sensorimotor Learning",
-      links: [],
+      links: [
+        {
+          title: "notes",
+          href: "https://azliu0.github.io/mit-notes/6.820/6_820_Notes.pdf",
+        },
+      ],
       grad: true,
       current: true,
     },
