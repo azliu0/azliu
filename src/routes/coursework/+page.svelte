@@ -3,6 +3,37 @@
 
   const course6: Array<Course> = [
     {
+      number: "6.820 [6.884]",
+      title: "Sensorimotor Learning",
+      links: [
+        {
+          title: "notes",
+          href: "https://azliu0.github.io/mit-notes/6.820/6_820_Notes.pdf",
+        },
+      ],
+      grad: true,
+      current: true,
+    },
+    {
+      number: "6.780 [6.437]",
+      title: "Inference and Information",
+      links: [
+        {
+          title: "notes",
+          href: "https://azliu0.github.io/mit-notes/6.780/6_780_Notes.pdf",
+        },
+      ],
+      grad: true,
+      current: true,
+    },
+    {
+      number: "6.584 [6.824]",
+      title: "Distributed Systems",
+      links: [],
+      grad: true,
+      current: true,
+    },
+    {
       number: "6.790 [6.867]",
       title: "Machine Learning",
       links: [
@@ -18,52 +49,20 @@
       grad: true,
     },
     {
+      number: "6.102 [6.031]",
+      title: "Software Construction",
+      links: [],
+      current: true,
+    },
+    {
       number: "6.861 [6.806]",
       title: "Advanced NLP",
       links: [],
     },
     {
-      number: "6.780 [6.437]",
-      title: "Inference and Information",
-      links: [
-        {
-          title: "notes",
-          href: "https://azliu0.github.io/mit-notes/6.780/6_780_Notes.pdf",
-        },
-      ],
-      grad: true,
-      current: true,
-    },
-    {
-      number: "6.820 [6.884]",
-      title: "Sensorimotor Learning",
-      links: [
-        {
-          title: "notes",
-          href: "https://azliu0.github.io/mit-notes/6.820/6_820_Notes.pdf",
-        },
-      ],
-      grad: true,
-      current: true,
-    },
-    {
       number: "6.106 [6.172]",
       title: "Software Performance Engineering",
       links: [],
-    },
-    {
-      number: "6.584 [6.824]",
-      title: "Distributed Systems",
-      links: [],
-      grad: true,
-      current: true,
-    },
-    {
-      number: "6.566 [6.858]",
-      title: "Computer Systems Security",
-      links: [],
-      grad: true,
-      current: true,
     },
     {
       number: "6.191 [6.004]",
@@ -111,16 +110,6 @@
       current: true,
     },
     {
-      number: "18.701",
-      title: "Abstract Algebra",
-      links: [
-        {
-          title: "notes",
-          href: "https://azliu0.github.io/mit-notes/18.701/18_701_Notes.pdf",
-        },
-      ],
-    },
-    {
       number: "18.615",
       title: "Stochastic Processes",
       links: [
@@ -132,12 +121,12 @@
       grad: true,
     },
     {
-      number: "6.S095",
-      title: "Probability",
+      number: "18.701",
+      title: "Abstract Algebra",
       links: [
         {
           title: "notes",
-          href: "https://azliu0.github.io/mit-notes/6.S095/6_S095_Notes.pdf",
+          href: "https://azliu0.github.io/mit-notes/18.701/18_701_Notes.pdf",
         },
       ],
     },
@@ -148,6 +137,16 @@
         {
           title: "notes",
           href: "https://azliu0.github.io/mit-notes/18.650/18_650_Notes.pdf",
+        },
+      ],
+    },
+    {
+      number: "6.S095",
+      title: "Probability",
+      links: [
+        {
+          title: "notes",
+          href: "https://azliu0.github.io/mit-notes/6.S095/6_S095_Notes.pdf",
         },
       ],
     },
