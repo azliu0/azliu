@@ -42,9 +42,9 @@
       "@context": "http://schema.org",
       "@type": "Person",
       "name": "Andrew Liu",
-      "url": {url},
-      "image": {imageUrl},
-      "alumniOf": "MIT",
+      "url": "https://www.azliu.cc",
+      "image": "https://www.azliu.cc/assets/favicons/favicon.ico",
+      "alumniOf": "MIT"
     }
   </script>
 </svelte:head>
