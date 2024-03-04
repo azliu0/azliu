@@ -86,7 +86,7 @@
     },
     {
       title: "stellar spectra analysis @ MIT Kavli Institute",
-      desc: "devised a Monte Carlo pipeline for extracting radial velocity and stellar temperature data given raw spectra of M-dwarfs. these stars were being studied specifically for exoplanet habitability, and this pipeline was used in the linked paper to analyze a newly discovered star-exoplanet system!",
+      desc: "devised a Monte Carlo pipeline for extracting radial velocity and stellar temperature data given raw spectra of M-dwarfs. these stars were being studied specifically for exoplanet habitability, and this pipeline was used in the linked paper to analyze a newly discovered star-exoplanet system.",
       date: "Dec 2022",
       link: "https://arxiv.org/abs/2307.05368",
       links: [{ title: "paper", href: "https://arxiv.org/abs/2307.05368" }],
@@ -114,18 +114,27 @@
       techs: ["C/C++", "cilk"],
     },
     {
-      title: "algebraic graph theory",
-      desc: "studied open problems in algebraic graph theory, specifically focusing on the behavior of the DP-color function and the list-color function (both related to chromatic polynomials) on specific families of graphs. relevant paper results linked",
-      date: "May 2022",
-      link: "https://arxiv.org/abs/2207.04831",
+      title: "upper bounds on the list color function",
+      desc: "made progress on an open problem in algebraic graph theory related to the long-run behavior of the list color function, a function that generalizes the classic chromatic polynomial. published in involve journal of mathematics.",
+      date: "Nov 2022",
+      link: "https://arxiv.org/pdf/2207.04831.pdf",
       links: [
         {
-          title: "paper 1",
-          href: "https://arxiv.org/abs/2207.04831",
+          title: "paper",
+          href: "https://arxiv.org/pdf/2207.04831.pdf",
         },
+      ],
+      techs: ["algebra", "graph theory"],
+    },
+    {
+      title: "polynomial representations of the DP color function",
+      desc: "proved that the long-run behavior of the DP color function is polynomial for generalized theta graphs, a function that generalizes list coloring, which generalizes the classical graph coloring problem.",
+      date: "Sep 2020",
+      link: "https://arxiv.org/pdf/2012.12897.pdf",
+      links: [
         {
-          title: "paper 2",
-          href: "https://arxiv.org/abs/2012.12897",
+          title: "paper",
+          href: "https://arxiv.org/pdf/2012.12897.pdf",
         },
       ],
       techs: ["algebra", "graph theory"],
