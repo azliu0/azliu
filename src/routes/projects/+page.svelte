@@ -106,7 +106,7 @@
       techs: ["C/C++", "cilk"],
     },
     {
-      title: "optimizing ismorphic subgraph counting @ MIT CSAIL",
+      title: "optimizing subgraph counting @ MIT CSAIL",
       desc: "devised and implemented new ways to count subgraph isomorphisms in large network graphs, e.g., triangles in Facebook. specifically focused on optimizing matrix multiplication for small subgraphs (<=K4)",
       date: "Jun 2023",
       link: "",
@@ -127,7 +127,7 @@
       techs: ["algebra", "graph theory"],
     },
     {
-      title: "polynomial representations of the DP color function",
+      title: "polynomial reps of the DP color function",
       desc: "proved that the long-run behavior of the DP color function is polynomial for generalized theta graphs, a function that generalizes list coloring, which generalizes the classical graph coloring problem.",
       date: "Sep 2020",
       link: "https://arxiv.org/pdf/2012.12897.pdf",
@@ -171,6 +171,7 @@
   });
 </script>
 
+<div>A shortlist of projects spanning research, software, and classes.</div>
 <div class="flex flex-col gap-4 mt-4 ml-[-16px]">
   {#each projects as project}
     <Project {project} />
