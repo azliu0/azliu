@@ -39,8 +39,8 @@
 </p>
 
 <p>
-  I am also interested in building cool software and nice user interfaces, and
-  am a dev head at
+  I am also interested in building software and user interfaces. I'm a dev head
+  at
   <a
     class="underline"
     href="https://hackmit.org/"
@@ -101,7 +101,8 @@
   In my free time, I enjoy my <a class="underline" href="/coursework">classes</a
   >, working on <a class="underline" href="/projects">projects</a>, and
   sometimes <a class="underline" href="/logs">writing</a>. Some of my
-  non-academic interests include poker, playing the violin, and cubing.
+  non-academic interests include poker, playing the violin, and
+  <a class="underline" href="/cubing">cubing</a>.
 </p>
 
 <br />
