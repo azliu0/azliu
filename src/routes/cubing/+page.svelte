@@ -12,14 +12,14 @@
   <div>
     <div><span class="text-blue-700">Solution</span>:</div>
     <div>z2 x <span class="text-gray-300">(inspection)</span></div>
-    <div>L2 U' R' U2 x <span class="text-gray-300">(xcross)</span></div>
+    <div>L2 U' R' U2 x' <span class="text-gray-300">(xcross)</span></div>
     <div>
       R' U2 R y U L U L2 U L <span class="text-gray-300">(F2L 2+3)</span>
     </div>
     <div>U' R U R' U' R U R' U' <span class="text-gray-300">(F2L 4)</span></div>
     <div>F R U R' U' F' <span class="text-gray-300">(OLL)</span></div>
     <div>
-      U2 x' R2 D2 R U R' D2 R U' R B2 <span class="text-gray-300">(PLL)</span>
+      U2 x R2 D2 R U R' D2 R U' R B2 <span class="text-gray-300">(PLL)</span>
     </div>
   </div>
 
