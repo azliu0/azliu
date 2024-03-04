@@ -171,7 +171,7 @@
   });
 </script>
 
-<div>A shortlist of projects spanning research, software, and classes.</div>
+<div>A shortlist of projects spanning software, research, and classes.</div>
 <div class="flex flex-col gap-4 mt-4 ml-[-16px]">
   {#each projects as project}
     <Project {project} />
