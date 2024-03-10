@@ -2,7 +2,7 @@
   export let data;
 </script>
 
-<div class="mb-4">
+<div>
   <hr />
   <div class="text-3xl mt-6">{data.meta.title}</div>
   <div class="text-2xl text-gray-400">{data.meta.subtitle}</div>

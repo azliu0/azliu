@@ -6,9 +6,6 @@ time: 30s
 toc: false
 published: true
 ---
-<hr />
-
-
 
 Welcome to my website! 
 
