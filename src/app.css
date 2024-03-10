@@ -238,7 +238,8 @@ hr {
 }
 
 .post-page-content-container hr {
-	margin: 2rem 0;
+	margin-top: 24px; /* mt-6 */
+	margin-bottom: 36px;
 }
 
 a {
