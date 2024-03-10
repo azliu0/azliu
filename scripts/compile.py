@@ -24,37 +24,16 @@ published: 'true/false' \n\
 "
 
 
-def print_red(text, new_line=True):
+def print_color(text, color, new_line=True):
     if new_line:
-        print(f"{RED}{text}{RESET}")
+        print(f"{color}{text}{RESET}")
     else:
-        print(f"{RED}{text}{RESET}", end="")
-
-
-def print_green(text, new_line=True):
-    if new_line:
-        print(f"{GREEN}{text}{RESET}")
-    else:
-        print(f"{GREEN}{text}{RESET}", end="")
-
-
-def print_cyan(text, new_line=True):
-    if new_line:
-        print(f"{CYAN}{text}{RESET}")
-    else:
-        print(f"{CYAN}{text}{RESET}", end="")
-
-
-def print_gray(text, new_line=True):
-    if new_line:
-        print(f"{GRAY}{text}{RESET}")
-    else:
-        print(f"{GRAY}{text}{RESET}", end="")
+        print(f"{color}{text}{RESET}", end="")
 
 
 def setup_script():
-    print_cyan("scripts/compile.py ", new_line=False)
-    print_green("building logs for production...")
+    print_color("scripts/compile.py ", CYAN, new_line=False)
+    print_color("building logs for production...", GREEN)
 
 
 def verify_content(markdown_content, filename):
@@ -82,8 +61,9 @@ def verify_content(markdown_content, filename):
             correct_format = False
 
     if not correct_format:
-        print_red(
-            f"✗ log {filename} formatted incorrectly. expected format:\n{CORRECT_FORMAT_STRING}"
+        print_color(
+            f"✗ log {filename} formatted incorrectly. expected format:\n{CORRECT_FORMAT_STRING}",
+            RED,
         )
         raise ValueError(f"log {filename} formatted incorrectly.")
 
@@ -113,7 +93,7 @@ def generate_toc_and_insert_anchors(content):
             modified_lines.append(line)
         else:
             if line.find(IGNORE_STRING) > -1:
-                print_gray(f"ignoring line: {line}")
+                print_color(f"ignoring line: {line}", GRAY)
             modified_lines.append(line)
 
     wants_toc = lines[5].split(":")[1].strip().lower() == "true"
@@ -129,8 +109,9 @@ def compile_logs(input_dir, output_dir):
 
     start_time = time.time()
     if not os.path.exists(input_dir):
-        print_red(
-            f"✗ directory '{input_dir}' does not exist. place logs in this directory before building."
+        print_color(
+            f"✗ directory '{input_dir}' does not exist. place logs in this directory before building.",
+            RED,
         )
         raise FileNotFoundError(f"directory '{input_dir}' does not exist.")
 
@@ -152,9 +133,9 @@ def compile_logs(input_dir, output_dir):
 
         print(f"Processed {md_file.name}")
 
-    print_green("✓ ", new_line=False)
+    print_color("✓ ", GREEN, new_line=False)
     print(f"{len(os.listdir(input_dir))} logs transformed.")
-    print_green(f"✓ built in {int((time.time() - start_time)*1000)}ms")
+    print_color(f"✓ built in {int((time.time() - start_time)*1000)}ms", GREEN)
 
 
 if __name__ == "__main__":
@@ -164,6 +145,6 @@ if __name__ == "__main__":
         compile_logs(input_dir=INPUT_DIR, output_dir=OUTPUT_DIR)
         print(f"✨ Done in {int((time.time() - start_time)*1000)}ms.")
     except Exception as e:
-        print_red(f"✗ ", new_line=False)
+        print_color(f"✗ ", RED, new_line=False)
         print(f"Build failed in {int((time.time() - start_time)*1000)}ms. Exiting...")
         raise e
