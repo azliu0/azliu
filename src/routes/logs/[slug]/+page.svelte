@@ -3,10 +3,10 @@
 </script>
 
 <div class="mb-4">
-  <div class="text-[0]">
-    <div class="text-2xl">{data.meta.title}</div>
-  </div>
-  <div class="text-[14px] italic text-gray-400 [word-spacing:-0.1rem]">
+  <hr />
+  <div class="text-3xl mt-6">{data.meta.title}</div>
+  <div class="text-2xl text-gray-400">{data.meta.subtitle}</div>
+  <div class="mt-2 text-sm italic text-gray-400 [word-spacing:-0.1rem]">
     {data.meta.date} · {data.meta.time}
   </div>
 </div>
