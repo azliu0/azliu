@@ -153,61 +153,62 @@
   ];
 </script>
 
-<p>
-  This is a list of some the classes that I've taken or are currently taking. I
-  like to take notes in LaTeX. I use my own style package to format my
-  documents, which can be found <a
-    href="https://github.com/azliu0/_andrew.sty"
-    target="_blank"
-    class="coursework-ref">here</a
-  >.
-</p>
-<p>
-  My setup is <a
-    href="https://neovim.io/"
-    target="_blank"
-    class="coursework-ref">Neovim</a
-  >
-  with
-  <a
-    href="https://github.com/lervag/vimtex"
-    target="_blank"
-    class="coursework-ref">VimTex</a
-  >
-  and
-  <a
-    href="https://pwmt.org/projects/zathura/"
-    target="_blank"
-    class="coursework-ref">zathura</a
-  >. More details about my workflow can be found
-  <a
-    href="https://github.com/azliu0/dotfiles/tree/main/latex"
-    target="_blank"
-    class="coursework-ref">here</a
-  >.
-</p>
-<p>
-  The source code for all of my notes can be found <a
-    href="https://azliu0.github.io/mit-notes/"
-    target="_blank"
-    class="coursework-ref">here</a
-  >
-  (full repo
-  <a
-    href="https://github.com/azliu0/mit-notes"
-    target="_blank"
-    class="coursework-ref">here</a
-  >). I use a
-  <a
-    href="https://github.com/features/actions"
-    target="_blank"
-    class="coursework-ref">GitHub action</a
-  > to automatically deploy whenever I update my notes, so the pdfs on this page
-  will always be the latest versions.
-</p>
-<p>~ = current, * = grad</p>
+<div class="space-y-6">
+  <p>
+    This is a list of some the classes that I've taken or are currently taking.
+    I like to take notes in LaTeX. I use my own style package to format my
+    documents, which can be found <a
+      href="https://github.com/azliu0/_andrew.sty"
+      target="_blank"
+      class="coursework-ref">here</a
+    >.
+  </p>
+  <p>
+    My setup is <a
+      href="https://neovim.io/"
+      target="_blank"
+      class="coursework-ref">Neovim</a
+    >
+    with
+    <a
+      href="https://github.com/lervag/vimtex"
+      target="_blank"
+      class="coursework-ref">VimTex</a
+    >
+    and
+    <a
+      href="https://pwmt.org/projects/zathura/"
+      target="_blank"
+      class="coursework-ref">zathura</a
+    >. More details about my workflow can be found
+    <a
+      href="https://github.com/azliu0/dotfiles/tree/main/latex"
+      target="_blank"
+      class="coursework-ref">here</a
+    >.
+  </p>
+  <p>
+    The source code for all of my notes can be found <a
+      href="https://azliu0.github.io/mit-notes/"
+      target="_blank"
+      class="coursework-ref">here</a
+    >
+    (full repo
+    <a
+      href="https://github.com/azliu0/mit-notes"
+      target="_blank"
+      class="coursework-ref">here</a
+    >). I use a
+    <a
+      href="https://github.com/features/actions"
+      target="_blank"
+      class="coursework-ref">GitHub action</a
+    > to automatically deploy whenever I update my notes, so the pdfs on this page
+    will always be the latest versions.
+  </p>
+</div>
 
-<div>Computer Science</div>
+<div class="mt-6">Computer Science</div>
 <ul>
   {#each course6 as course}
     <li>

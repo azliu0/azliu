@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -192,9 +194,10 @@ html {
 
 body {
   background-color: white;
-  font-family: 'JetBrains Mono';
+  font-family: 'Figtree';
+  /* font-family: 'Inter'; */
+  /* font-family: 'JetBrains Mono'; */
   color: black;
-  line-height: 1.5rem;
 }
 
 .coursework-ref {
@@ -221,8 +224,7 @@ hr {
 }
 
 .post-page-content-container {
-  font-size: 14px;
-  width: 100%;
+  max-width: calc(100vw - 48px);
 }
 
 .post-page-content-container a {

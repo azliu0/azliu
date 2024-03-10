@@ -36,8 +36,8 @@
     out:fly={{ y: 5, duration: 200 }}
   >
     <div class="flex justify-center">
-      <div class="w-[720px] p-0 max-md:mt-[-4rem]">
-        <div class="w-full px-6">
+      <div class="w-[732px] p-0 max-md:mt-[-4rem]">
+        <div class="w-full px-6 text-lg">
           <slot />
         </div>
       </div>

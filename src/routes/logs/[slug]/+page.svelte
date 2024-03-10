@@ -4,21 +4,18 @@
 
 <div class="mb-4">
   <div class="text-[0]">
-    {#each data.meta.title.split(" ") as word}
-      <span class="text-2xl text-brightred">{word[0]}</span>
-      <span class="text-2xl">{word.slice(1)} </span>
-    {/each}
+    <div class="text-2xl">{data.meta.title}</div>
   </div>
   <div class="text-[14px] italic text-gray-400 [word-spacing:-0.1rem]">
     {data.meta.date} · {data.meta.time}
   </div>
 </div>
-<div class="post-page-content-container">
+<div class="post-page-content-container text-base overflow-x-auto">
   <svelte:component this={data.content} />
 </div>
 
 <br />
-<div class="mb-[-0.5rem]">
+<div class="mb-[-0.75rem]">
   <a href={`/md/${data.slug}.md`} class="markdown hover:text-brightred"
     >Read Markdown</a
   >

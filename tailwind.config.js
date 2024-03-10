@@ -10,6 +10,9 @@ module.exports = {
     screens: {
       md: "640px",
     },
+    fontFamily: {
+      jetbrains: ["JetBrains Mono"],
+    },
   },
   plugins: [],
 };

@@ -21,16 +21,16 @@
       {/each}
     </div>
   </div>
-  <div class="text-sm mt-6">{project.desc}</div>
+  <div class="mt-6 text-base">{project.desc}</div>
   <div class="flex mt-6 gap-2">
     {#each project.links as link, idx}
       <a
         href={link.href}
         target="_blank"
-        class="text-xs text-green-500 hover:text-green-700">{link.title}</a
+        class="text-sm text-green-500 hover:text-green-700">{link.title}</a
       >
       {#if idx < project.links.length - 1}
-        <span class="text-xs mx-[-4px] text-green-500">·</span>
+        <span class="text-sm mx-[-4px] text-green-500">·</span>
       {/if}
     {/each}
   </div>

@@ -8,7 +8,7 @@ published: true
 
 Over winter break, a friend and I implemented stable diffusion from scratch:
 
-# <a href="https://image.azliu.cc" target="_blank">image.azliu.cc</a>
+## <a href="https://image.azliu.cc" target="_blank">image.azliu.cc</a>
 
 There were a lot of interesting and unexpected aspects of the project that made it a lot of fun. For example, we did not realize how difficult it would be to deploy a model that ended up being roughly 4GB. In the end, we are happy with the way it turned out, and luckily we don't have to pay too much money to keep this running forever! 
 

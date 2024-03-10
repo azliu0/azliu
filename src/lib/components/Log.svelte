@@ -5,7 +5,6 @@
 
 <a
   href={`logs/${log.slug}`}
-  target="_blank"
   class="w-full p-4 pl-4 hover:bg-slate-50 transition-all"
 >
   <div class="flex justify-between">
@@ -13,7 +12,7 @@
       <span class="text-brightred">#</span>
       {log.title}
     </div>
-    <div class="text-slate-600 text-sm">{log.date}</div>
+    <div class="text-slate-600 text-base">{log.date}</div>
   </div>
-  <div class="mt-[6px] text-sm text-slate-700">{log.subtitle}</div>
+  <div class="mt-[6px] text-base text-slate-700">{log.subtitle}</div>
 </a>
