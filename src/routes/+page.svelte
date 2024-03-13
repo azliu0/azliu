@@ -27,7 +27,7 @@
     Mathematics (course 18) at MIT.
   </p>
 
-  <p>
+  <!-- <p>
     I like machine learning, particularly generative models like diffusion
     models and large language models. I am specifically interested in
     researching and better understanding intelligence, and am currently working
@@ -106,7 +106,7 @@
     sometimes
     <a class="text-blue-700 hover:bg-blue-100" href="/logs">writing</a>, and
     <a class="text-blue-700 hover:bg-blue-100" href="/cubing">cubing</a>.
-  </p>
+  </p> -->
 </div>
 
 <div class="flex gap-[6px] mt-10">
