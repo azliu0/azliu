@@ -29,3 +29,11 @@ logs are roughly rendered in two steps:
 using a script to do the first step could be viewed as overkill, but I wasn't able to find a better solution or library that does this for me.
 
 another note is that logs are technically rendered as "dynamic" routes, meaning that they are not hardcoded. the site is still deployed as a static website through Svelte's static site generation (see [here](https://kit.svelte.dev/docs/adapter-static)).
+
+## rss feed
+
+the script to generate the rss feed for the logs (see [here](https://azliu.cc/feed.xml)) can be run with 
+
+```sh
+python3 scripts/rss.py
+```

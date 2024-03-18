@@ -20,6 +20,7 @@ jobs:
 
       - run: yarn install
       - run: python3 scripts/compile.py
+      - run: python3 scripts/rss.py
       - run: yarn build
 
       - name: Deploy to GitHub Pages
