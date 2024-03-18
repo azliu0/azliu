@@ -13,3 +13,4 @@ yarn-error.log
 
 static/md
 feed.xml
+scripts/__pycache__

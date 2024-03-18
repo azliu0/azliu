@@ -104,6 +104,8 @@ def compile_logs(input_dir, output_dir):
         raise FileNotFoundError(f"directory '{input_dir}' does not exist.")
 
     Path(output_dir).mkdir(exist_ok=True)
+    for file in os.listdir(output_dir):
+        os.remove(os.path.join(output_dir, file))
 
     for md_file in Path(input_dir).glob("*.md"):
         with open(md_file, "r", encoding="utf-8") as file:
