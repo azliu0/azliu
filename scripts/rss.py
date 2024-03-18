@@ -35,6 +35,9 @@ def create_rss_feed(blogs, title, link, description):
         title_elem.text = blog["title"]
         link_elem = SubElement(item, "link")
         link_elem.text = blog["link"]
+        guid = SubElement(item, "guid")
+        guid.text = blog["link"]
+        guid.set("isPermalink", "true")
         description_elem = SubElement(item, "description")
         description_elem.text = blog["subtitle"]
         pubDate = SubElement(item, "pubDate")
@@ -55,7 +58,7 @@ def generate_rss_feed():
                 "title": metadata["title"],
                 "subtitle": metadata["subtitle"],
                 "date": metadata["date"],
-                "link": f'https://azliu.cc/{file_path.replace("static/md/", "").replace(".md","")}',
+                "link": f'https://azliu.cc/logs/{file_path.replace("static/md/", "").replace(".md","")}',
             }
             blogs.append(blog_data)
 

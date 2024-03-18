@@ -8,6 +8,13 @@
     { name: "logs", href: "/logs" },
   ];
 
+  const capitalize = (str: string): string => {
+    if (!str) {
+      return "";
+    }
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+  };
+
   let pageTitle: string | null = null;
   $: {
     const link = pages.find(
@@ -29,16 +36,10 @@
       class="mt-[7.5rem] mb-[2rem] flex justify-between max-md:flex-col-reverse"
     >
       <div>
-        {#if pageTitle === "projects"}
+        {#if pages.find((page) => page.name === pageTitle && page.name !== "home")}
           <div class="text-3xl">
-            <a href="/projects">Projects</a>
+            <a href="/{pageTitle}">{capitalize(pageTitle)}</a>
           </div>
-        {:else if pageTitle === "coursework"}
-          <div class="text-3xl">
-            <a href="/coursework">Coursework</a>
-          </div>
-        {:else if pageTitle === "logs"}
-          <div class="text-3xl"><a href="/logs">Logs</a></div>
         {:else}
           <div class="text-4xl">
             <a href="/"
