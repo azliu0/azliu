@@ -15,20 +15,23 @@
 </div>
 
 <br />
-<div class="mb-[-0.75rem]">
-  <a href={`/md/${data.slug}.md`} class="markdown hover:text-brightred"
-    >Read Markdown</a
-  >
-</div>
-<div class="mb-[-0.5rem]">
-  <!-- svelte-ignore a11y-click-events-have-key-events -->
-  <span
-    role="button"
-    tabindex="0"
-    class="markdown hover:text-brightred"
-    on:click={() => window.scroll({ top: 0, left: 0, behavior: "smooth" })}
-  >
-    Scroll to Top
-  </span>
+<hr />
+<div class="flex justify-between mt-[-0.1rem]">
+  <div>
+    <a href={`/md/${data.slug}.md`} class="markdown hover:text-brightred"
+      >Read Markdown</a
+    >
+  </div>
+  <div>
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <span
+      role="button"
+      tabindex="0"
+      class="markdown hover:text-brightred"
+      on:click={() => window.scroll({ top: 0, left: 0, behavior: "smooth" })}
+    >
+      Scroll to Top
+    </span>
+  </div>
 </div>
 <div class="mb-8"></div>

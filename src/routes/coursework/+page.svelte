@@ -3,18 +3,6 @@
 
   const course6: Array<Course> = [
     {
-      number: "6.820 [6.884]",
-      title: "Sensorimotor Learning",
-      links: [
-        {
-          title: "notes",
-          href: "https://azliu0.github.io/mit-notes/6.820/6_820_Notes.pdf",
-        },
-      ],
-      grad: true,
-      current: true,
-    },
-    {
       number: "6.780 [6.437]",
       title: "Inference and Information",
       links: [
@@ -23,13 +11,6 @@
           href: "https://azliu0.github.io/mit-notes/6.780/6_780_Notes.pdf",
         },
       ],
-      grad: true,
-      current: true,
-    },
-    {
-      number: "6.584 [6.824]",
-      title: "Distributed Systems",
-      links: [],
       grad: true,
       current: true,
     },
@@ -49,10 +30,28 @@
       grad: true,
     },
     {
-      number: "6.102 [6.031]",
-      title: "Software Construction",
-      links: [],
+      number: "6.820 [6.884]",
+      title: "Sensorimotor Learning",
+      links: [
+        {
+          title: "notes",
+          href: "https://azliu0.github.io/mit-notes/6.820/6_820_Notes.pdf",
+        },
+      ],
+      grad: true,
       current: true,
+    },
+    {
+      number: "6.584 [6.824]",
+      title: "Distributed Systems",
+      links: [],
+      grad: true,
+      current: true,
+    },
+    {
+      number: "6.106 [6.172]",
+      title: "Software Performance Engineering",
+      links: [],
     },
     {
       number: "6.861 [6.806]",
@@ -60,9 +59,10 @@
       links: [],
     },
     {
-      number: "6.106 [6.172]",
-      title: "Software Performance Engineering",
+      number: "6.102 [6.031]",
+      title: "Software Construction",
       links: [],
+      current: true,
     },
     {
       number: "6.191 [6.004]",
@@ -212,7 +212,7 @@
 <ul>
   {#each course6 as course}
     <li>
-      {course.current ? "~" : ""}{course.grad ? "*" : ""}{course.number}: {course.title}
+      {course.number}: {course.title}
       {#each course.links as link}
         {" "}(<a href={link.href} target="_blank" class="coursework-ref"
           >{link.title}</a
@@ -225,7 +225,7 @@
 <ul>
   {#each course18 as course}
     <li>
-      {course.current ? "~" : ""}{course.grad ? "*" : ""}{course.number}: {course.title}
+      {course.number}: {course.title}
       {#each course.links as link}
         {" "}(<a href={link.href} target="_blank" class="coursework-ref"
           >{link.title}</a
