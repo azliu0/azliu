@@ -20,7 +20,7 @@
       links: [
         {
           title: "notes",
-          href: "https://azliu0.github.io/mit-notes/6.790/6_790_Notes.pdf",
+          href: "/assets/pdf/6_790_Notes.pdf",
         },
         {
           title: "project",
@@ -70,7 +70,7 @@
       links: [
         {
           title: "notes",
-          href: "https://azliu0.github.io/mit-notes/6.122/6_122_Notes.pdf",
+          href: "/assets/pdf/6_122_Notes.pdf",
         },
       ],
     },
@@ -110,7 +110,7 @@
       links: [
         {
           title: "notes",
-          href: "https://azliu0.github.io/mit-notes/18.615/18_615_Notes.pdf",
+          href: "/assets/pdf/18_615_Notes.pdf",
         },
       ],
       grad: true,
@@ -121,7 +121,7 @@
       links: [
         {
           title: "notes",
-          href: "https://azliu0.github.io/mit-notes/18.701/18_701_Notes.pdf",
+          href: "/assets/pdf/18_701_Notes.pdf",
         },
       ],
     },
@@ -131,7 +131,7 @@
       links: [
         {
           title: "notes",
-          href: "https://azliu0.github.io/mit-notes/18.650/18_650_Notes.pdf",
+          href: "/assets/pdf/18_650_Notes.pdf",
         },
       ],
     },
@@ -141,7 +141,7 @@
       links: [
         {
           title: "notes",
-          href: "https://azliu0.github.io/mit-notes/6.S095/6_S095_Notes.pdf",
+          href: "/assets/pdf/6_S095_Notes.pdf",
         },
       ],
     },
@@ -184,13 +184,13 @@
   </p>
   <p>
     The source code for all of my notes can be found <a
-      href="https://azliu0.github.io/mit-notes/"
+      href="https://github.com/azliu0/mit-notes"
       target="_blank"
       class="coursework-ref">here</a
     >
-    (full repo
+    (build
     <a
-      href="https://github.com/azliu0/mit-notes"
+      href="https://azliu0.github.io/mit-notes/"
       target="_blank"
       class="coursework-ref">here</a
     >). I use a
