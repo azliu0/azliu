@@ -12,3 +12,4 @@ vite.config.ts.timestamp-*
 yarn-error.log
 
 static/md
+feed.xml

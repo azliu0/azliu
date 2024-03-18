@@ -1,14 +1,9 @@
 import time
 import os
 from pathlib import Path
+from utils import print_color, CYAN, GREEN, RED, GRAY
 
 IGNORE_STRING = "<!-- compile-ignore -->"
-
-RED = "\033[91m"
-GREEN = "\033[92m"
-CYAN = "\033[96m"
-GRAY = "\033[37m"
-RESET = "\033[0m"
 
 INPUT_DIR = "logs"
 OUTPUT_DIR = "static/md"
@@ -22,13 +17,6 @@ toc: 'true/false' \n\
 published: 'true/false' \n\
 --- \
 "
-
-
-def print_color(text, color, new_line=True):
-    if new_line:
-        print(f"{color}{text}{RESET}")
-    else:
-        print(f"{color}{text}{RESET}", end="")
 
 
 def setup_script():
@@ -148,3 +136,4 @@ if __name__ == "__main__":
         print_color(f"✗ ", RED, new_line=False)
         print(f"Build failed in {int((time.time() - start_time)*1000)}ms. Exiting...")
         raise e
+    os.system("rm vite.config.ts.timestamp-*")
