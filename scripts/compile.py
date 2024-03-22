@@ -86,7 +86,11 @@ def generate_toc_and_insert_anchors(content):
 
     wants_toc = lines[5].split(":")[1].strip().lower() == "true"
     if wants_toc:
-        toc = "\n\n### Table of Contents\n" + "\n".join(toc) + "\n\n<hr />\n\n"
+        toc = (
+            "\n\n<br />\n<details>\n  <summary>Table of Contents</summary>\n\n<br/>\n\n"
+            + "\n".join(toc)
+            + "\n\n</details>\n<hr />\n\n"
+        )
     else:
         toc = "<hr />\n\n"
     return "\n".join(modified_lines[:8] + toc.split("\n") + modified_lines[8:])

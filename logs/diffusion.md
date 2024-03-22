@@ -17,9 +17,13 @@ One of the reasons why we were motivated to take on this project is because we w
 
 <a id="ddpm"></a>
 
+<a id="1-ddpm"></a>
+
 ## 1. DDPM
 
 We begin with DDPMs [(Ho et al. 2020)](https://arxiv.org/abs/2006.11239). These are the foundation of all good diffusion models. In particular, InstructPix2Pix is a fine-tuned version of Stable Diffusion, which works out of the box with DDPM.
+
+<a id="11-foundation"></a>
 
 ### 1.1. Foundation
 
@@ -74,6 +78,8 @@ $$
 
 The full derivation of all the facts leading up to this point can be found [here](https://azliu0.github.io/mit-notes/6.7900/6_7900_Notes.pdf). The importance of this fact is that training DDPM models boils down to sampling random images at random timesteps, and having a model (typically a UNet) learn to predict the the noise added at timestep $$t$$.
 
+<a id="12-clarifying-$$x-t$$"></a>
+
 ### 1.2. Clarifying $$x_t$$
 
 The input of our UNet is an image $$x_t$$, generated from $$x_0$$ using the distribution $$q(x_t|x_0)$$. the output of our UNet is the noise used to generate $$x_t$$, $$\varepsilon_{\theta}(x_t,t)$$.
@@ -83,6 +89,8 @@ This noise is sampled from $$\mathcal{N}(0,1)$$, per the [reparamaterization tri
 Even though we are predicting noise from $$x_0$$ to $$x_t$$, this noise is used to generate the distribution $$p(x_{t-1}|x_t)$$. in other words, the distribution for predicting one timestep backwards from $$t$$ to $$t-1$$ is a function of noise added from $$0$$ to $$t$$. this is because the original (tractable) distribution that we are trying to learn is $$q(x_{t-1}|x_t,x_0)$$, which also has access to information about $$x_0$$.
 
 A concrete demonstration of this fact is the way that we simulate the backwards process once we have trained our UNet. We must make $$T$$ calls to the UNet to go from pure noise to the original data distribution (more accurately, our approximation of the distribution). In each of these $$T$$ calls, although the UNet estimates noise from timestep $$0$$ to the current timestep, we cannot jump directly to the beginning, because we do not know $$p(x_0|x_t)$$ as a function of this noise. Thus, although we have a shortcut for the forwards process, there is no equivalent shortcut for the backwards process, and so inference is quite expensive.
+
+<a id="2-multivariate-gaussians"></a>
 
 ## 2. Multivariate Gaussians
 
@@ -103,6 +111,8 @@ $$
 be the precision matrix corresponding to $$x$$.
 
 <a id="2.1"></a>
+
+<a id="21-computing-marginal-gaussian-from-joint-gaussian"></a>
 
 ### 2.1. Computing marginal gaussian from joint gaussian
 
@@ -192,6 +202,8 @@ Note how intuitively nice this result is. It's exactly what we expect, even if i
 
 <a id="2.2"></a>
 
+<a id="22-computing-marginal-gaussian-given-other-other-marginal-and-conditional"></a>
+
 ### 2.2. Computing marginal gaussian given other other marginal and conditional
 
 The next question we will focus on is computing the marginal $$p(y)$$ given
@@ -213,7 +225,8 @@ $$
 \ln p(x,y) &= -\frac{1}{2}(x-\mu)^T\Lambda (x-\mu) - \frac{1}{2}(y-Ax-b)^TL(y-Ax-b) + \text{const} \\
 &= -\frac{1}{2}\left(x^T\Lambda x + x^TA^TLAx + y^TLy - y^TLA - x^TA^TLy \right. \\
 &\qquad\qquad \left. - 2x^T\Lambda \mu + 2x^TA^TLb - 2y^TLb\right) + \text{const} \\
-&= -\frac{1}{2}\begin{pmatrix}x \\ y\end{pmatrix}^T\begin{pmatrix}\Lambda + A^TLA & -A^TL \\ -LA & L\end{pmatrix}\begin{pmatrix}x \\ y\end{pmatrix} + \begin{pmatrix}x \\ y\end{pmatrix}^T\begin{pmatrix}\Lambda\mu - A^TLb \\ Lb\end{pmatrix} + \text{const}.
+&= -\frac{1}{2}\begin{pmatrix}x \\ y\end{pmatrix}^T\begin{pmatrix}\Lambda + A^TLA & -A^TL \\ -LA & L\end{pmatrix}\begin{pmatrix}x \\ y\end{pmatrix} \\
+&\qquad + \begin{pmatrix}x \\ y\end{pmatrix}^T\begin{pmatrix}\Lambda\mu - A^TLb \\ Lb\end{pmatrix} + \text{const}.
 \end{align*}
 $$
 
@@ -241,6 +254,8 @@ Like our result in [2.1](#2.1), this final expression is nice because it aligns 
 
 <a id="2.3"></a>
 
+<a id="23-kl-divergence"></a>
+
 ### 2.3. KL Divergence
 
 The last thing we will examine is how to compute the KL divergence, or relative entropy, between two multivariate gaussians. The general expression is given by
@@ -253,7 +268,8 @@ Applying this to multivariate $$P=\mathcal{N}(\mu_1, \Sigma_1)$$ and $$Q=\mathca
 
 $$
 \begin{align*}
-\mathbb{E}_{x\sim p(x)}\left[\log \frac{p(x)}{q(x)}\right] &= \frac{1}{2}\mathbb{E}_{x\sim p(x)}\left[\log \frac{\vert \Sigma_2\vert}{\vert \Sigma_1\vert} - (x-\mu_1)^T\Sigma_1^{-1}(x-\mu_1) + (x-\mu_2)^T\Sigma_2^{-1}(x-\mu_2)\right].
+&\mathbb{E}_{x\sim p(x)}\left[\log \frac{p(x)}{q(x)}\right] \\
+&\quad =\frac{1}{2}\mathbb{E}_{x\sim p(x)}\left[\log \frac{\vert \Sigma_2\vert}{\vert \Sigma_1\vert} - (x-\mu_1)^T\Sigma_1^{-1}(x-\mu_1) + (x-\mu_2)^T\Sigma_2^{-1}(x-\mu_2)\right].
 \end{align*}
 $$
 
@@ -271,6 +287,8 @@ $$
 $$
 
 <a id="ddim"></a>
+
+<a id="3-ddim"></a>
 
 ## 3. DDIM
 
@@ -291,6 +309,8 @@ $$
 $$
 
 so the two terms $$\sqrt{1-\overline{\alpha}_{t-1}-\sigma_t^2}$$ (under the mean) and $$\sigma_t$$ (under actual variance) can be seen as having total noise $$\sqrt{1-\overline{\alpha}_{t-1}}$$, which matches the noise expression for the forward process, i.e., the distribution $$q(x_{t-1}|x_0)$$. The paper introduces this "splitting" of the noise factors to control the actual amount of noise that is induced during the backwards inference step.
+
+<a id="31-proof-that-$$mathcalq$$-satisfies-forwards-definition"></a>
 
 ### 3.1. Proof that $$\mathcal{Q}$$ satisfies forwards definition
 
@@ -337,6 +357,8 @@ q_{\sigma}(x_{t-1}|x_0) = \mathcal{N}(\sqrt{\overline{\alpha}_{t-1}}x_0, (1-\ove
 $$
 
 which completes the proof.
+
+<a id="32-proof-that-$$mathcalq$$-can-be-applied-to-ddpm-trained-models"></a>
 
 ### 3.2. Proof that $$\mathcal{Q}$$ can be applied to DDPM trained models
 
@@ -413,9 +435,13 @@ $$
 
 as desired.
 
+<a id="4-conditional-generation"></a>
+
 ## 4. Conditional generation
 
 Eventually, our goal is not just to generate image from noise, but we would like to also generate images conditioned on text labels. More specifically, our final task is to eventually generate images conditioned on both text labels _and_ an input reference image, but we'll discuss this more in the [next section](#final-conditional-objective). In this section, we'll discuss methods for conditional generation in an easier subtask, which starts with generating images from discrete input classes. As a simple example of this subtask, we might have a diffusion model try to generate one of the ten digits from the MNIST dataset.
+
+<a id="41-classifier-guided"></a>
 
 ### 4.1 Classifier Guided
 
@@ -456,6 +482,8 @@ $$
 
 Given the external classifier $$f_{\phi}(y|x_t,t)$$, it wasn't entirely clear to us the optimal way to calculate the gradient with respect to $$x_t$$. In practice, we feel that this could be approximated by taking the difference in value of the prediction between two timesteps. 
 
+<a id="42-classifier-free"></a>
+
 ### 4.2 Classifier-free
 
 Assuming that we don't have a classifier, we can instead modify our original noise predictor $$\varepsilon_{\theta}$$ to learn conditional and unconditional generation.
@@ -493,6 +521,8 @@ and it then becomes intuitively clear how our weight is influencing inference; w
 
 <a id="final-conditional-objective"></a>
 
+<a id="5-modifying-the-conditional-objective-for-pix2pix"></a>
+
 ## 5. Modifying the conditional objective for Pix2Pix
 
 We can apply similar logic to obtain classifier-free guidance with two conditionings, a previous image $$c_I$$ and the class label $$c_T$$.
@@ -507,6 +537,8 @@ $$
 &\qquad + s_T(\epsilon_\theta(x_t, c_I, c_T) -  \epsilon_\theta(x_t, c_I, \varnothing)).
 \end{align*}
 $$
+
+<a id="references"></a>
 
 ## References
 
