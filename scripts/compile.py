@@ -142,4 +142,4 @@ if __name__ == "__main__":
         print_color(f"✗ ", RED, new_line=False)
         print(f"Build failed in {int((time.time() - start_time)*1000)}ms. Exiting...")
         raise e
-    os.system("rm vite.config.ts.timestamp-*")
+    os.system("rm -f vite.config.ts.timestamp-*")

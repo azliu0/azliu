@@ -95,12 +95,7 @@
     {
       number: "18.656",
       title: "Non-Asymptotic Statistics",
-      links: [
-        {
-          title: "notes",
-          href: "https://azliu0.github.io/mit-notes/18.656/18_656_Notes.pdf",
-        },
-      ],
+      links: [],
       grad: true,
       current: true,
     },
