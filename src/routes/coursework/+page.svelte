@@ -5,12 +5,7 @@
     {
       number: "6.780 [6.437]",
       title: "Inference and Information",
-      links: [
-        {
-          title: "notes",
-          href: "https://azliu0.github.io/mit-notes/6.780/6_780_Notes.pdf",
-        },
-      ],
+      links: [],
       grad: true,
       current: true,
     },
