@@ -17,10 +17,6 @@
           title: "notes",
           href: "/assets/pdf/6_790_Notes.pdf",
         },
-        {
-          title: "project",
-          href: "/assets/pdf/6_790_final_paper.pdf",
-        },
       ],
       grad: true,
     },
