@@ -163,7 +163,7 @@
       class="coursework-ref">zathura</a
     >. More details about my workflow can be found
     <a
-      href="https://github.com/azliu0/dotfiles/tree/main/latex"
+      href="https://github.com/azliu0/dotfiles/tree/main/.config/latex"
       target="_blank"
       class="coursework-ref">here</a
     >.
