@@ -42,6 +42,5 @@
         </div>
       </div>
     </div>
-    <div class="mb-8"></div>
   </main>
 {/key}

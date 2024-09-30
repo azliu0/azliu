@@ -1,7 +1,6 @@
 <script lang="ts">
   export let title = "Andrew Liu";
-  export let description =
-    "Hello! I'm Andrew, an undergraduate studying Computer Science (course 6) and Mathematics (course 18) at MIT.";
+  export let description = "Hi! I'm Andrew.";
   export let url = "https://www.azliu.cc";
   export let siteName = "Andrew Liu";
 </script>

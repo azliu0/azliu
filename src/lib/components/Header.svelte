@@ -2,7 +2,6 @@
   import { page } from "$app/stores";
 
   const pages = [
-    { name: "home", href: "/" },
     { name: "coursework", href: "/coursework" },
     { name: "projects", href: "/projects" },
     { name: "logs", href: "/logs" },
@@ -20,7 +19,7 @@
     const link = pages.find(
       ({ href }) =>
         href === $page.url.pathname ||
-        (href.length > 1 && $page.url.pathname.startsWith(href))
+        (href.length > 1 && $page.url.pathname.startsWith(href)),
     );
     if (link) {
       pageTitle = link.name;
@@ -36,19 +35,9 @@
       class="mt-[7.5rem] mb-[2rem] flex justify-between max-md:flex-col-reverse"
     >
       <div>
-        {#if pages.find((page) => page.name === pageTitle && page.name !== "home")}
-          <div class="text-3xl">
-            <a href="/{pageTitle}">{capitalize(pageTitle)}</a>
-          </div>
-        {:else}
-          <div class="text-4xl">
-            <a href="/"
-              >Andrew Liu<span class="text-gray-500 text-[2.75rem] pl-[0.2rem]"
-                >.</span
-              ></a
-            >
-          </div>
-        {/if}
+        <div class="text-4xl">
+          <a href="/">Andrew Liu</a>
+        </div>
       </div>
       <div>
         <div class="text-lg flex justify-end max-md:mb-[2.75rem]">
