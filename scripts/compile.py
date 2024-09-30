@@ -1,7 +1,11 @@
-import time
+"""Compile logs for production."""
+
 import os
+import re
+import time
 from pathlib import Path
-from utils import print_color, CYAN, GREEN, RED, GRAY
+
+from utils import CYAN, GRAY, GREEN, RED, print_color
 
 IGNORE_STRING = "<!-- compile-ignore -->"
 
@@ -18,13 +22,21 @@ published: 'true/false' \n\
 --- \
 "
 
+CORRECT_IMAGE_STRING = (
+    "<Image src='/static/assets/<date>/<image>' alt='<caption>' width={<width>} />"
+)
+POTENTIAL_IMAGE_PATTERN = r"<Image[^>]+>"
+IMAGE_PATTERN = r'<Image src="([^"]+)"(?: alt="([^"]*)")? width={(\d+)} />'
+
 
 def setup_script():
+    """Build setup script."""
     print_color("scripts/compile.py ", CYAN, new_line=False)
     print_color("building logs for production...", GREEN)
 
 
 def verify_content(markdown_content, filename):
+    """Verify that the given markdown content is formatted correctly."""
     separator = "---"
     correct_format = True
 
@@ -50,10 +62,35 @@ def verify_content(markdown_content, filename):
 
     if not correct_format:
         print_color(
-            f"✗ log {filename} formatted incorrectly. expected format:\n{CORRECT_FORMAT_STRING}",
+            f"✗ log {filename} formatted incorrectly. "
+            f"expected format:\n{CORRECT_FORMAT_STRING}",
             RED,
         )
         raise ValueError(f"log {filename} formatted incorrectly.")
+
+    matches = re.findall(POTENTIAL_IMAGE_PATTERN, markdown_content)
+    for match in matches:
+        valid_match = re.search(IMAGE_PATTERN, match)
+        if not valid_match:
+            print_color(
+                f"✗ image {match} in log {filename} is formatted incorrectly. "
+                f"expected format:\n{CORRECT_IMAGE_STRING}",
+                RED,
+            )
+            raise ValueError(
+                f"image {match} in log {filename} is formatted incorrectly."
+            )
+        # src, _, _ = valid_match.groups()
+        # if src[-3:] != "jpg":
+        #     print_color(
+        #         f"✗ image {match} in log {filename} is a large image format. "
+        #         f"use jpg instead.",
+        #         RED,
+        #     )
+        #     raise ValueError(
+        #         f"image {match} in log {filename} is a large image format. "
+        #         f"use jpg instead."
+        #     )
 
 
 def sanitize_latex(text):
@@ -62,7 +99,7 @@ def sanitize_latex(text):
 
 
 def generate_toc_and_insert_anchors(content):
-    """Generates a table of contents for the given Markdown content and inserts anchor tags before headings."""
+    """Generate table of contents and insert anchor tags."""
     toc = []
     modified_lines = []
     lines = content.split("\n")
@@ -84,25 +121,44 @@ def generate_toc_and_insert_anchors(content):
                 print_color(f"ignoring line: {line}", GRAY)
             modified_lines.append(line)
 
+    print(toc)
     wants_toc = lines[5].split(":")[1].strip().lower() == "true"
     if wants_toc:
         toc = (
             "\n\n<br />\n<details>\n  <summary>Table of Contents</summary>\n\n<br/>\n\n"
             + "\n".join(toc)
-            + "\n\n</details>\n<hr />\n\n"
+            + "\n\n</details>\n\n"
         )
     else:
-        toc = "<hr />\n\n"
+        toc = "\n\n"
     return "\n".join(modified_lines[:8] + toc.split("\n") + modified_lines[8:])
 
 
-def compile_logs(input_dir, output_dir):
-    """Adds a ToC to each Markdown file in the input directory and writes them to the output directory."""
+def process_images(content):
+    """Process images in the given markdown content."""
+    matches = re.findall(IMAGE_PATTERN, content)
+    for match in matches:
+        original_tag = (
+            f'<Image src="{match[0]}" alt="{match[1]}" width={{{match[2]}}} />'
+        )
+        src, alt, width = match
+        html_output = (
+            f"<div style='display: flex; flex-direction: column; align-items: center; text-align: center;'>"
+            f"<img src='{src}' alt='{alt}' width='{width}px' />"
+            f"<i>{alt}</i>"
+            f"</div>"
+        )
+        content = content.replace(original_tag, html_output)
+    return content
 
+
+def compile_logs(input_dir, output_dir):
+    """Compile logs for production."""
     start_time = time.time()
     if not os.path.exists(input_dir):
         print_color(
-            f"✗ directory '{input_dir}' does not exist. place logs in this directory before building.",
+            f"✗ directory '{input_dir}' does not exist. "
+            f"place logs in this directory before building.",
             RED,
         )
         raise FileNotFoundError(f"directory '{input_dir}' does not exist.")
@@ -112,14 +168,15 @@ def compile_logs(input_dir, output_dir):
         os.remove(os.path.join(output_dir, file))
 
     for md_file in Path(input_dir).glob("*.md"):
-        with open(md_file, "r", encoding="utf-8") as file:
+        with open(md_file, encoding="utf-8") as file:
             content = file.read()
         verify_content(markdown_content=content, filename=md_file.name)
 
     for md_file in Path(input_dir).glob("*.md"):
-        with open(md_file, "r", encoding="utf-8") as file:
+        with open(md_file, encoding="utf-8") as file:
             content = file.read()
         new_content = generate_toc_and_insert_anchors(content)
+        new_content = process_images(new_content)
 
         output_file = Path(output_dir) / md_file.name
         with open(output_file, "w", encoding="utf-8") as file:
@@ -139,7 +196,7 @@ if __name__ == "__main__":
         compile_logs(input_dir=INPUT_DIR, output_dir=OUTPUT_DIR)
         print(f"✨ Done in {int((time.time() - start_time)*1000)}ms.")
     except Exception as e:
-        print_color(f"✗ ", RED, new_line=False)
+        print_color("✗ ", RED, new_line=False)
         print(f"Build failed in {int((time.time() - start_time)*1000)}ms. Exiting...")
         raise e
     os.system("rm -f vite.config.ts.timestamp-*")

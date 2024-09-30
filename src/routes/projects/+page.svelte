@@ -4,8 +4,22 @@
 
   const projects: Array<ProjectType> = [
     {
+      title: "twister",
+      desc: "canary exploit challenge based on the mersenne twister prng for HackMIT puzzle 2024",
+      date: "July 2024",
+      link: "https://twister.hackmit.org",
+      links: [
+        { title: "website", href: "https://twister.hackmit.org" },
+        {
+          title: "code",
+          href: "https://github.com/azliu0/twister",
+        },
+      ],
+      techs: ["prng", "binexp"],
+    },
+    {
       title: "zyzx",
-      desc: "natural language terminal shell built in Zig and using fine-tuned Mixtral 8x7b. in crude testing, our custom model outperformed GPT3.5 in natural language to bash translation. built with @tam-albert and @richen for treehacks 2024.",
+      desc: "natural language terminal shell built in Zig and using fine-tuned Mixtral 8x7b. in crude testing, our custom model outperformed GPT3.5 in natural language to bash translation. built with @tam-albert and @richen for treehacks 2024",
       date: "Feb 2024",
       link: "https://zyzx.azliu.cc",
       links: [
@@ -19,7 +33,7 @@
     },
     {
       title: "image-to-image-translation",
-      desc: "stable diffusion implementation from scratch in PyTorch, including VAE, transformer, and diffusion modules. the website is a web visualizer for the model, which is deployed on a serverless inference server via modelbit",
+      desc: "stable diffusion implementation in PyTorch, including VAE, transformer, and diffusion modules. the website is a web visualizer for the model, deployed on serverless infrastructure via Modal Labs",
       date: "Jan 2024",
       link: "https://image.azliu.cc",
       links: [
@@ -29,7 +43,7 @@
           href: "https://github.com/azliu0/image-to-image-translation",
         },
       ],
-      techs: ["pytorch", "react", "flask", "mantine", "modelbit"],
+      techs: ["pytorch", "modal", "flask", "mantine"],
     },
     {
       title: "pigeon",
@@ -64,7 +78,7 @@
     },
     {
       title: "mazed",
-      desc: "live multiplayer maze tag game integrated with a learning interface including user/teacher views. top 6 in web lab 2023",
+      desc: "live multiplayer maze tag game",
       date: "Jan 2023",
       link: "https://github.com/azliu0/mazed",
       links: [
@@ -78,7 +92,7 @@
     },
     {
       title: "processor",
-      desc: "for 6.191 [6.004] design project, I optimized a processor by implementing heuristics such as data prefetching, branch target buffer, simd instructions, kogge-stone addition, pipelined CLA multiplication, and more. achieved top 5 performance in the class out of ~200 students",
+      desc: "for 6.191 [6.004] design project, I optimized a processor by implementing heuristics such as data prefetching, branch target buffer, simd instructions, kogge-stone addition, pipelined CLA multiplication, and more",
       date: "May 2023",
       link: "",
       links: [],
@@ -86,7 +100,7 @@
     },
     {
       title: "stellar spectra analysis @ MIT Kavli Institute",
-      desc: "devised a Monte Carlo pipeline for extracting radial velocity and stellar temperature data given raw spectra of M-dwarfs. these stars were being studied specifically for exoplanet habitability, and this pipeline was used in the linked paper to analyze a newly discovered star-exoplanet system.",
+      desc: "devised a Monte Carlo pipeline for extracting radial velocity and stellar temperature data given raw spectra of M-dwarfs. these stars were being studied specifically for exoplanet habitability, and this pipeline was used in the linked paper to analyze a newly discovered star-exoplanet system",
       date: "Dec 2022",
       link: "https://arxiv.org/abs/2307.05368",
       links: [{ title: "paper", href: "https://arxiv.org/abs/2307.05368" }],
@@ -94,7 +108,7 @@
     },
     {
       title: "AmarBot",
-      desc: "for 6.106 [6.172] final project, my team (4 members) optimized a bot in playing leiserchess, a variant of chess, using heuristics such as young-siblings wait, bitboards, and caching optimizations. achieved top 5 performance in the class out of 35 teams",
+      desc: "for 6.106 [6.172] final project, my team (4 members) optimized a bot in playing leiserchess, a variant of chess, using heuristics such as young-siblings wait, bitboards, and caching optimizations",
       date: "Dec 2023",
       link: "https://azliu.cc/assets/pdf/6_106_project_4_final_writeup.pdf",
       links: [
@@ -115,7 +129,7 @@
     },
     {
       title: "upper bounds on the list color function",
-      desc: "made progress on an open problem in algebraic graph theory related to the long-run behavior of the list color function, a function that generalizes the classic chromatic polynomial. published in involve journal of mathematics.",
+      desc: "made progress on an open problem in algebraic graph theory related to the long-run behavior of the list color function, a function that generalizes the classic chromatic polynomial",
       date: "Nov 2022",
       link: "https://arxiv.org/pdf/2207.04831.pdf",
       links: [
@@ -128,7 +142,7 @@
     },
     {
       title: "polynomial reps of the DP color function",
-      desc: "proved that the long-run behavior of the DP color function is polynomial for generalized theta graphs, a function that generalizes list coloring, which generalizes the classical graph coloring problem.",
+      desc: "proved that the long-run behavior of the DP color function is polynomial for generalized theta graphs, a function that generalizes list coloring, which generalizes the classical graph coloring problem",
       date: "Sep 2020",
       link: "https://arxiv.org/pdf/2012.12897.pdf",
       links: [
@@ -161,10 +175,10 @@
   // sort projects by descending date
   projects.sort((a, b) => {
     const dateA = new Date(
-      a.date.replace(/(\w+) (\d{4})/, "$1 01, $2")
+      a.date.replace(/(\w+) (\d{4})/, "$1 01, $2"),
     ).getTime();
     const dateB = new Date(
-      b.date.replace(/(\w+) (\d{4})/, "$1 01, $2")
+      b.date.replace(/(\w+) (\d{4})/, "$1 01, $2"),
     ).getTime();
 
     return dateB - dateA;

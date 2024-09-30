@@ -1,4 +1,3 @@
-<!-- import buton component -->
 <script lang="ts">
   import Button from "$lib/components/Button.svelte";
   import type { Link } from "$lib/types";
@@ -22,10 +21,7 @@
 </script>
 
 <div class="space-y-6">
-  <p>
-    Hello! I'm Andrew, an undergraduate studying Computer Science (course 6) and
-    Mathematics (course 18) at MIT.
-  </p>
+  <p>Hello! I'm Andrew, an undergrad at MIT studying CS and Math.</p>
 </div>
 
 <div class="flex gap-[6px] mt-10">
