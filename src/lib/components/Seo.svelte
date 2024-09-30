@@ -3,7 +3,6 @@
   export let description =
     "Hello! I'm Andrew, an undergraduate studying Computer Science (course 6) and Mathematics (course 18) at MIT.";
   export let url = "https://www.azliu.cc";
-  export let imageUrl = "https://www.azliu.cc/assets/favicons/favicon.ico";
   export let siteName = "Andrew Liu";
 </script>
 
@@ -16,7 +15,6 @@
   <meta property="og:url" content={url} />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
-  <meta property="og:image" content={imageUrl} />
   <meta property="og:site_name" content={siteName} />
 
   <!-- Twitter -->
@@ -24,7 +22,6 @@
   <meta property="twitter:url" content={url} />
   <meta property="twitter:title" content={title} />
   <meta property="twitter:description" content={description} />
-  <meta property="twitter:image" content={imageUrl} />
   <meta property="twitter:creator" content="@azliu0" />
 
   <!-- Canonical URL -->
@@ -43,7 +40,6 @@
       "@type": "Person",
       "name": "Andrew Liu",
       "url": "https://www.azliu.cc",
-      "image": "https://www.azliu.cc/assets/favicons/favicon.ico",
       "alumniOf": "MIT"
     }
   </script>

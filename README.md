@@ -7,8 +7,8 @@ powered by [SvelteKit](https://kit.svelte.dev/) and [Tailwind CSS](https://tailw
 run the website with 
 
 ```sh
-yarn install
-yarn dev
+npm install
+npm run dev
 ```
 
 by default, logs won't show up, because they must be processed and generated with the script. to do this, run
