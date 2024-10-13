@@ -16,8 +16,8 @@ published: true
 This past summer, I was lucky to join Y Combinator as a founder in S24. I met
 lots of great people and saw lots of cool projects.
 
-My startup was Honeycomb, a automation platform for software engineering with
-LLMs at the core. Some features we built included automated feature development,
+My startup was Honeycomb, an AI-powered automation platform for enterprise
+software engineering teams. Some features we built included automated feature development,
 bug tracing, unit testing, code reviews, etc.
 
 This was my first attempt at a startup. I've been reading about startups for a
@@ -61,7 +61,7 @@ output to the user's specific use cases.
 
 We made the mistake of sidelining these ideas. Instead, we tunnel visioned on performance. 
 In Devin's original launch, they cited a new state-of-the-art in a benchmark called SWE-Bench. Here's a brief
-overview of the benchmark, taken from their [website](https://www.swebench.com/):
+overview of the benchmark, taken from their website:
 
 > SWE-bench is a dataset that tests systems' ability to solve GitHub issues automatically. The dataset collects 2,294 Issue-Pull Request pairs from 12 popular Python repositories. Evaluation is performed by unit test verification using post-PR behavior as the reference solution.
 
@@ -97,9 +97,9 @@ We were pretty inexperienced and bad at launching. Our first launch didn't get a
 
 The main problem was that we launched before our result had shown up on the leaderboard, and also
 buried the lede, i.e., the fact that we were state-of-the-art was hidden in the thread. Our group
-partner Jared helped fix this for us and boosted us about a week later:
+partner Jared helped fix this for us and boosted us when we finally got on the leaderboard about a week later:
 
-<Image src="/assets/images/logs/launch-two.png" alt="" width={400} />
+<Image src="/assets/images/logs/launch-two.png" alt="https://x.com/snowmaker/status/1831219425007296566" width={400} />
 
 This performed much better, and we got a lot of traction. Still, there were lots of small optimizations that we missed in this stage. 
 We weren't qualifying leads correctly, we didn't have a CRM set up, etc. We probably messed up dozens of sales calls because we were unrefined at sales. This probably would not have mattered if the product was better, 
@@ -145,7 +145,6 @@ how optimistic we were about the initial idea. We didn't realize that we were en
 very, very crowded market, and that we had multiple competitors with hundreds of millions of dollars in
 funding deep into the space. The probability that we would be the first mover of anything was close to zero.
 
-
 ### Co-founder
 
 Co-founder relationship is the lifeblood of the startup, and you only really
@@ -162,7 +161,7 @@ good or bad depending on the product that you're building.
 
 If your team has some part missing, e.g., product oriented thinking like 
 marketing, sales, design, etc. doesn't fall in the union of your skillsets, this
-can also have negative impact. These can all be learned, but there should be someone
+will have a negative impact. These can all be learned, but there should be someone
 willing to learn to do these things well.
 
 Some of the greatest startups in the world benefited greatly from having a big 
@@ -172,7 +171,7 @@ union of skills in the co-founding team, e.g., Apple, Airbnb, Scale AI.
 
 This one is trickier because it's much less obvious even when working with
 friends that you know well. I'm also not sure if this is only relevant for younger
-founders or generally applicable?
+founders, or YC, or if this is generally an issue, but it adversely affected us.
 
 Everyone on the co-founding team must be aligned on the mission and vision. 
 Building is ugly, hard, and not prestigious, and everyone must be ok with that.
@@ -181,7 +180,11 @@ one on the team can be "too good" for the startup.
 
 I'm not sure how to detect this early on, but red flags might include someone dragging on
 internship or job offers, e.g., "I have an internship lined up in X months, 
-the startup must work by then or I will accept the offer".
+the startup must work by then or I will accept the offer". Even if well-intentioned,
+incentives like this are sinister to the startup.
+
+This is one problem with YC, which is that it's become a credential, it can be gamed to get into,
+and it's too easy to give up immediately after the batch when the prestige goes away.
 
 ## Future
 
