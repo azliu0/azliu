@@ -4,19 +4,6 @@
 
   const projects: Array<ProjectType> = [
     {
-      title: "honeycomb",
-      desc: "co-founded yc startup. raised $1.5mm to build coding agents",
-      date: "Oct 2024",
-      link: "https://azliu.cc/logs/rise-and-fall-of-honeycomb",
-      links: [
-        {
-          title: "reflection",
-          href: "https://azliu.cc/logs/rise-and-fall-of-honeycomb",
-        },
-      ],
-      techs: ["agents", "codegen"],
-    },
-    {
       title: "twister",
       desc: "canary exploit challenge based on the mersenne twister prng for HackMIT puzzle 2024",
       date: "July 2024",

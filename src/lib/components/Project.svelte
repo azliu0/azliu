@@ -6,7 +6,7 @@
 
 <a
   href={project.link}
-  target="_blank"
+  target={project.link.includes("azliu.cc") ? "" : "_blank"}
   class="w-full p-4 rounded-md z-[100] hover:bg-slate-50 transition-all"
 >
   <div class="text-xl font-bold mb-4">
@@ -26,7 +26,7 @@
     {#each project.links as link, idx}
       <a
         href={link.href}
-        target="_blank"
+        target={link.href.includes("azliu.cc") ? "" : "_blank"}
         class="text-sm text-green-500 hover:text-green-700">{link.title}</a
       >
       {#if idx < project.links.length - 1}
