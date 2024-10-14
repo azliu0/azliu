@@ -3,7 +3,7 @@ title: Rise and Fall of Honeycomb
 subtitle: honeycomb
 date: '2024-10-13'
 time: 10m
-toc: false
+toc: true
 published: true
 ---
 
@@ -59,7 +59,7 @@ iteratively edit those plans. Alternatively, by giving the user access to the
 system prompts or other configurations in the agent nodes to better tailor the
 output to the user's specific use cases.
 
-We made the mistake of sidelining these ideas. Instead, we tunnel visioned on performance. 
+We mostly sidelined these ideas, though. Instead, we tunnel visioned on performance. 
 In Devin's original launch, they cited a new state-of-the-art in a benchmark called SWE-Bench. Here's a brief
 overview of the benchmark, taken from their website:
 
@@ -86,10 +86,20 @@ Nevertheless, at the end of ~3 months, we reached our goal of surpassing state-o
 
 <br />
 
-When it finally came time to launch, we landed on the product idea of the general
-automation platform for software engineering. The way that we designed our system made it easy for us
-to transform the SWE-Bench workflow into general automation workflows for things like feature development,
-bug tracing, unit testing, code reviews, etc., so that's what we launched.
+When it finally came time to launch, we had to figure out an actual product. We abandoned all of the
+product ideas that we had initially, since a few things became clear while we were building:
+- The original idea of configurable agents would take forever to implement, and it wasn't clear that this was even a solid differentiator
+- The space was ultra-saturated with competitors, even more so than we originally thought. We didn't do enough research
+
+We knew we wanted to build automation outside of the IDE. The most successful of our competitors were companies 
+like Cursor, Codeium, etc. which relied heavily on the user to make final judgement calls
+on generated code. We bet on the other side of the spectrum, which was fully autonomous agents that 
+could solve issues without any human intervention.
+
+What we eventually settled on was a general automation platform for software engineering, with
+automation workflows for feature development, bug tracing, unit testing, code reviews, etc. 
+This was easy for us to hack together, since the way that we designed our system for the benchmark
+made it easy for us to transform the SWE-Bench workflow into each of these workflows.
 
 ## Launch
 
@@ -101,17 +111,20 @@ partner Jared helped fix this for us and boosted us when we finally got on the l
 
 <Image src="/assets/images/logs/launch-two.png" alt="https://x.com/snowmaker/status/1831219425007296566" width={400} />
 
-This performed much better, and we got a lot of traction. Still, there were lots of small optimizations that we missed in this stage. 
-We weren't qualifying leads correctly, we didn't have a CRM set up, etc. We probably messed up dozens of sales calls because we were unrefined at sales. This probably would not have mattered if the product was better, 
-but these were small mistakes that could have been avoided with a bit more experience.
+This performed much better, and we got a lot of traction. Still, there were lots of things that we messed up. 
+We weren't qualifying leads correctly, we didn't have a CRM set up, etc. We probably threw dozens of sales calls because we were unrefined at sales. This probably wouldn't have mattered if the product was better, but these were small mistakes that could have been avoided with a bit more experience.
+
+Overall the launch was probably as good as we could have asked for. It reached
+hundreds of thousands of people, we got thousands of people on our waitlist, culminating in a lot of
+external attention and, most importantly, users.
 
 ## Death
 
-This traction didn't last. In short, the automated coding was not good enough, and it turns out
-that we were competing in a space that was completely saturated with competitors. The end-to-end solution
-was just not good enough, and on top of some co-founder differences, we shut down.
+This traction didn't last. In short, the automated coding wasn't good enough, and the space was
+too saturated. The end-to-end solution wasn't enough of a differentiator, and on top of some co-founder differences,
+we shut down.
 
-Some takeaways:
+## Lessons
 
 ### Do research
 
@@ -180,18 +193,8 @@ one on the team can be "too good" for the startup.
 
 I'm not sure how to detect this early on, but red flags might include someone dragging on
 internship or job offers, e.g., "I have an internship lined up in X months, 
-the startup must work by then or I will accept the offer". Even if well-intentioned,
-incentives like this are sinister to the startup.
+the startup must work by then or I'll go there instead". Even if well-intentioned,
+this is a perverse incentive.
 
 This is one problem with YC, which is that it's become a credential, it can be gamed to get into,
-and it's too easy to give up immediately after the batch when the prestige goes away.
-
-## Future
-
-Just for fun, predictions vaguely related to Honeycomb:
-
-1. The next B2B SaaS out of YC with a Scale AI-level outcome (e.g. $1B+ ARR) will not be related to AI.
-2. AI will never get good enough for Devin to be useful, where "useful" roughly means wide adoption in industry.
-3. The end state for all of the smaller giants (e.g., Magic.dev, Poolside) is an interface like Cursor. They will not be significantly better than Cursor despite the hype and funding.
-4. Cursor acquired by OpenAI.
-5. OpenAI and Anthropic will productize codegen and both go-to-market with a Cursor-like alternative of their own, making the products in (3) obsolete.
+and it's easy to give up immediately after the batch when the prestige goes away.
