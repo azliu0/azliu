@@ -143,7 +143,7 @@ def process_images(content):
         )
         src, alt, width = match
         html_output = (
-            f"<div style='display: flex; flex-direction: column; align-items: center;'>"
+            f"<div style='display: flex; flex-direction: column; align-items: center; text-align: center;'>"
             f"<img src='{src}' alt='{alt}' width='{width}px' />"
             f"<i>{alt}</i>"
             f"</div>"
