@@ -33,7 +33,7 @@
     },
     {
       title: "image-to-image-translation",
-      desc: "stable diffusion implementation from scratch in PyTorch, including VAE, transformer, and diffusion modules. the website is a web visualizer for the model, which is deployed on a serverless inference server via modelbit",
+      desc: "stable diffusion implementation in PyTorch, including VAE, transformer, and diffusion modules. the website is a web visualizer for the model, deployed on serverless infrastructure via Modal Labs",
       date: "Jan 2024",
       link: "https://image.azliu.cc",
       links: [
@@ -43,7 +43,7 @@
           href: "https://github.com/azliu0/image-to-image-translation",
         },
       ],
-      techs: ["pytorch", "react", "flask", "mantine", "modelbit"],
+      techs: ["pytorch", "modal", "flask", "mantine"],
     },
     {
       title: "pigeon",
