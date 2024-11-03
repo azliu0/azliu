@@ -1,7 +1,15 @@
 <script lang="ts">
   import type { Project } from "$lib/types";
+  import { onMount } from "svelte";
 
   export let project: Project;
+
+  onMount(() => {
+    if (window.location.hash) {
+      const el = document.getElementById(window.location.hash.slice(1));
+      if (el) el.scrollIntoView();
+    }
+  });
 </script>
 
 <a
