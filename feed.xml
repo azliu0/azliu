@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<rss version="2.0">
+  <channel>
+    <title>Andrew Liu's Logs</title>
+    <link>https://azliu.cc/logs</link>
+    <description>I'm Andrew Liu, an undergraduate studying Computer Science (course 6) and Mathematics (course 18) at MIT.</description>
+    <item>
+      <title>Image to Image Translation</title>
+      <link>https://azliu.cc/logs/diffusion</link>
+      <guid isPermalink="true">https://azliu.cc/logs/diffusion</guid>
+      <description>diffusion models</description>
+      <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Finding Friends</title>
+      <link>https://azliu.cc/logs/nac-sphere</link>
+      <guid isPermalink="true">https://azliu.cc/logs/nac-sphere</guid>
+      <description>spherical trig</description>
+      <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>
