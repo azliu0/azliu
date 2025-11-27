@@ -4,6 +4,30 @@
 
   const projects: Array<ProjectType> = [
     {
+      title: "rust compiler",
+      desc: "for 6.110 [6.033] final project, I built a compiler for Decaf, a C-style toy programming language, built in Rust. includes Chaitin-Briggs register allocation, static single-assignment IR, global copy propagation, dead code elimination, common subexpression elimination, constant folding, algebra optimizations, loop hoisting, loop strength reduction, and more.",
+      date: "May 2025",
+      link: "",
+      links: [],
+      techs: ["rust", "compiler design", "optimization"],
+    },
+    {
+      title: "plume",
+      desc: "HackMIT's judging and application platform. Previously, this was two separate applications; with the HackMIT dev team, I helped join and rewrite the application from scratch using more modern frameworks, better database design, and new incorporated functionality.",
+      date: "Sep 2024",
+      link: "https://plume.hackmit.org",
+      links: [{ title: "website", href: "https://plume.hackmit.org" }],
+      techs: ["react", "flask", "postgres", "aws"],
+    },
+    {
+      title: "oh-hell scorekeeper",
+      desc: "scorekeeper for the Oh Hell card game",
+      date: "Aug 2024",
+      link: "https://oh.azliu.cc",
+      links: [{ title: "website", href: "https://oh-hell.azliu.cc" }],
+      techs: ["claude"],
+    },
+    {
       title: "twister",
       desc: "canary exploit challenge based on the mersenne twister prng for HackMIT puzzle 2024",
       date: "July 2024",
