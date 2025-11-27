@@ -7,7 +7,7 @@
 <svelte:window bind:innerWidth={screenWidth} />
 <a
   href={`logs/${log.slug}`}
-  class="w-full p-4 pl-4 hover:bg-slate-50 transition-all"
+  class="w-full p-4 pl-4 hover:bg-warmgreyhover transition-all"
 >
   <div class="flex justify-between">
     <div class="text-xl">

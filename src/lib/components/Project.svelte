@@ -15,7 +15,7 @@
 <a
   href={project.link}
   target={project.link.includes("azliu.cc") ? "" : "_blank"}
-  class="w-full p-4 rounded-md z-[100] hover:bg-slate-50 transition-all"
+  class="w-full p-4 rounded-md z-[100] hover:bg-warmgreyhover transition-all"
 >
   <div
     class="text-xl font-bold mb-4"

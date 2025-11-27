@@ -13,7 +13,7 @@
     },
     {
       title: "plume",
-      desc: "HackMIT's judging and application platform. Previously, this was two separate applications; with the HackMIT dev team, I helped join and rewrite the application from scratch using more modern frameworks, better database design, and new incorporated functionality.",
+      desc: "HackMIT's judging and application platform. with the HackMIT dev team, I helped rewrite the application from scratch using more modern frameworks, better database design, and new functionality.",
       date: "Sep 2024",
       link: "https://plume.hackmit.org",
       links: [{ title: "website", href: "https://plume.hackmit.org" }],
@@ -21,7 +21,7 @@
     },
     {
       title: "oh-hell scorekeeper",
-      desc: "scorekeeper for the Oh Hell card game",
+      desc: "a scorekeeper for the card game Oh Hell",
       date: "Aug 2024",
       link: "https://oh.azliu.cc",
       links: [{ title: "website", href: "https://oh-hell.azliu.cc" }],
@@ -29,7 +29,7 @@
     },
     {
       title: "twister",
-      desc: "canary exploit challenge based on the mersenne twister prng for HackMIT puzzle 2024",
+      desc: "for the HackMIT puzzle challenge 2024, I built a canary-based binary exploit based on the mersenne twister prng",
       date: "July 2024",
       link: "https://twister.hackmit.org",
       links: [

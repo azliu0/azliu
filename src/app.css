@@ -19,7 +19,7 @@
  * Doctor, or Tim Murtaugh's HTML5 Reset.
  */
 
- html {
+html {
 	box-sizing: content-box;
 }
 
@@ -79,7 +79,8 @@ h6 {
 	margin: 2.33em 0;
 }
 
-ul, menu {
+ul,
+menu {
 	list-style-type: disc;
 	margin: 1em 0;
 	padding: 0 0 0 40px;
@@ -121,22 +122,32 @@ ins {
 	text-decoration: underline;
 }
 
-b, strong {
+b,
+strong {
 	font-weight: bold;
 }
 
-i, cite, em, var, address, dfn {
+i,
+cite,
+em,
+var,
+address,
+dfn {
 	font-style: italic;
 	font-weight: inherit;
 }
 
-abbr[title], dfn[title] {
+abbr[title],
+dfn[title] {
 	border-bottom: 0;
 	cursor: default;
 	font-weight: inherit;
 }
 
-tt, code, kbd, samp {
+tt,
+code,
+kbd,
+samp {
 	font-family: monospace;
 	font-weight: inherit;
 }
@@ -164,7 +175,8 @@ small {
 	font-weight: inherit;
 }
 
-sub, sup {
+sub,
+sup {
 	font-weight: inherit;
 	line-height: inherit;
 	position: static;
@@ -189,33 +201,33 @@ iframe {
 /* begin actual css classes */
 
 html {
-  scroll-behavior: smooth !important;
+	scroll-behavior: smooth !important;
 }
 
 body {
-  background-color: white;
-  font-family: 'Figtree';
-  /* font-family: 'Inter'; */
-  /* font-family: 'JetBrains Mono'; */
-  color: black;
+	@apply bg-warmgrey;
+	font-family: 'Figtree';
+	/* font-family: 'Inter'; */
+	/* font-family: 'JetBrains Mono'; */
+	color: black;
 }
 
 .coursework-ref {
-  color: rgb(255, 120, 67);
+	color: rgb(255, 120, 67);
 }
 
 .coursework-ref:hover {
-  cursor: pointer;
-  background-color: rgb(255, 160, 122, 0.3)
+	cursor: pointer;
+	background-color: rgb(255, 160, 122, 0.3)
 }
 
 .markdown {
-  font-size: 12px;
+	font-size: 12px;
 }
 
 .markdown:hover {
-  cursor: pointer;
-  color: gray;
+	cursor: pointer;
+	color: gray;
 }
 
 hr {
@@ -225,29 +237,30 @@ hr {
 }
 
 .post-page-content-container {
-  max-width: calc(100vw - 48px);
+	max-width: calc(100vw - 48px);
 }
 
 .post-page-content-container a {
-  color: rgb(255, 50, 50);
+	color: rgb(255, 50, 50);
 }
 
 .post-page-content-container a:hover {
-  cursor: pointer;
-  background-color: rgb(255, 50, 50, 0.1);
+	cursor: pointer;
+	background-color: rgb(255, 50, 50, 0.1);
 }
 
 .post-page-content-container hr {
-	margin-top: 24px; /* mt-6 */
+	margin-top: 24px;
+	/* mt-6 */
 	margin-bottom: 36px;
 }
 
 a {
-  text-decoration: none;
-  color: black;
+	text-decoration: none;
+	color: black;
 }
 
 ul {
-  margin-top: 0;
-  margin-left: -1rem;
+	margin-top: 0;
+	margin-left: -1.25rem;
 }

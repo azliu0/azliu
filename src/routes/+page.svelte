@@ -33,40 +33,40 @@
   <p>
     In the past, I've worked on fast multimodal inference at
     <a
-      class="font-medium text-slate-600 hover:text-black transition-colors no-underline"
+      class="font-medium text-warmred hover:text-warmreddark transition-colors no-underline"
       href="https://www.nvidia.com/en-us/"
       target="_blank"
       rel="noopener noreferrer">NVIDIA</a
     >, quantitative research at
     <a
-      class="font-medium text-slate-600 hover:text-black transition-colors no-underline"
+      class="font-medium text-warmred hover:text-warmreddark transition-colors no-underline"
       href="https://www.citadelsecurities.com/"
       target="_blank"
       rel="noopener noreferrer">Citadel Securities</a
     >, inference and architectures at
     <a
-      class="font-medium text-slate-600 hover:text-black transition-colors no-underline"
+      class="font-medium text-warmred hover:text-warmreddark transition-colors no-underline"
       href="https://www.liquid.ai/"
       target="_blank"
       rel="noopener noreferrer">Liquid AI</a
     >, containerization infra at
     <a
-      class="font-medium text-slate-600 hover:text-black transition-colors no-underline"
+      class="font-medium text-warmred hover:text-warmreddark transition-colors no-underline"
       href="https://modal.com/"
       target="_blank"
       rel="noopener noreferrer">Modal</a
     >, and startups at
     <a
-      class="font-medium text-slate-600 hover:text-black transition-colors no-underline"
+      class="font-medium text-warmred hover:text-warmreddark transition-colors no-underline"
       href="https://www.ycombinator.com/"
       target="_blank"
       rel="noopener noreferrer">YCombinator</a
     >.
   </p>
   <p>
-    During my undergrad, I've also enjoyed organizing
+    In the past, I've also helped organize
     <a
-      class="font-medium text-slate-600 hover:text-black transition-colors no-underline"
+      class="font-medium text-warmred hover:text-warmreddark transition-colors no-underline"
       href="https://hackmit.org/"
       target="_blank"
       rel="noopener noreferrer">HackMIT</a
