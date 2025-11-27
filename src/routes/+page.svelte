@@ -64,7 +64,7 @@
     >.
   </p>
   <p>
-    In the past, I've also helped organize
+    I've also helped organize
     <a
       class="font-medium text-warmred hover:text-warmreddark transition-colors no-underline"
       href="https://hackmit.org/"
